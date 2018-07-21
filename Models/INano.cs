@@ -1,4 +1,4 @@
-﻿
+
 namespace Ogre.NanoRepairTech
 {
 	public interface INano
