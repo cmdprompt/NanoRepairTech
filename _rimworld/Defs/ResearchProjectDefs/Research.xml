@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ResearchTabDef>
+		<defName>Ogre_NanoTechResearchTab</defName>
+		<label>Nano Repair Tech</label>
+	</ResearchTabDef>
+
+	<ResearchProjectDef>
+		<defName>Ogre_NanoTech</defName>
+		<label>Nano Repair Tech</label>
+		<tab>Ogre_NanoTechResearchTab</tab>
+		<description>Allows Nano Tech repair unit construction: Beds and Storage Shelfs. Beds repair equipped apparel while you sleep in them, shelves repair apparel stored on them. All units come with Nano Tech nanites which need to be powered and fueled. Nano Tech fuel can be created at the machining bench and with additional research at the biofuel refinery.</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>ComplexFurniture</li>
+			<li>Machining</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<researchViewX>0</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ogre_NanoTech_Breakdown</defName>
+		<label>Apparel Breakdown</label>
+		<tab>Ogre_NanoTechResearchTab</tab>
+		<description>Break down apparel, tainted and/or non-tainted, at the biofuel refinery into a multitude of chemicals which can be further refined into Nano Tech fuel with further research.</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>Ogre_NanoTech</li>
+			<li>BiofuelRefining</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<researchViewX>1</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ogre_NanoTech_Refine</defName>
+		<label>Refining</label>
+		<tab>Ogre_NanoTechResearchTab</tab>
+		<description>Refine nano tech fuel base and small amounts of textile/leather into nano tech fuel. This process requires chemfuel as a catalyst.</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>Ogre_NanoTech_Breakdown</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<researchViewX>2</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>Ogre_NanoTech_Weapons</defName>
+		<label>Nanite Extender Arm</label>
+		<tab>Ogre_NanoTechResearchTab</tab>
+		<description>Alter the nanites used in nano tech units to incorporate an extender arm. This modification, with an increased power requirement, makes it possible to repair weaponry in addition to apparel.</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>MicroelectronicsBasics</li>
+			<li>Ogre_NanoTech</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<researchViewX>1</researchViewX>
+		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ogre_NanoTech_Advanced</defName>
+		<label>Power Shielding</label>
+		<tab>Ogre_NanoTechResearchTab</tab>
+		<description>Further alter the nanites used in nano tech units to greatly increase their electric shielding. This lets the nanites operate at higher wattages, increasing their repair rate for apparel and greatly increasing their rate for weapons.</description>
+		<baseCost>3000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>Ogre_NanoTech_Weapons</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<researchViewX>2</researchViewX>
+		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+
+</Defs>

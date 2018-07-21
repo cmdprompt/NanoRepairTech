@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>Ogre_NanoTechFuel</thingDef>
+			</li>
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>Ogre_NanoTechFuelBase</thingDef>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraderKindDef[defName = "Caravan_Outlander_BulkGoods"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>Ogre_NanoTechFuel</thingDef>
+			</li>
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>Ogre_NanoTechFuelBase</thingDef>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraderKindDef[defName = "Visitor_Outlander_Standard"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>Ogre_NanoTechFuel</thingDef>
+			</li>
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>Ogre_NanoTechFuelBase</thingDef>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraderKindDef[defName = "Orbital_BulkGoods"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>Ogre_NanoTechFuel</thingDef>
+			</li>
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>Ogre_NanoTechFuelBase</thingDef>
+			</li>
+		</value>
+	</Operation>
+</Patch>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+		<name>Nano Repair Tech</name>
+		<author>Ogre</author>
+		<targetVersion>1.0.0</targetVersion>
+		<description>Beds that consume power to slowly mend equipped clothing/apparel and repair weapons while you sleep.
+		
+Required research:
+ - Beds
+ - MicroElectronics Basics
+ - Mending Beds Basic
+ - Mending Beds (Weapons) -> Existing and new Mending Beds will now also
+   repair equipped weapons
+ - Mending Beds (Advanced) -> Allows construction of adv. mending beds, these beds can
+   be constructed by a skilled constructor; they are more comfortable and repair apparel
+   at an increased rate, and weapons at a greatly increased rate. More power is needed 
+   to power the bed and construction requirements include more components and small
+   amounts of the rare metals gold and uranium.
+ - Hospital Beds (for hospital version)
+ 
+Info:
+ - The rate at which mending / repair work is done is determined by the quality 
+   of the bed. And is displayed in the info section.
+ - Beds that are not powered or toggled off, just become regular 
+   beds ( i.e. you can still sleep in them ).
+ - When a bed does not have an occupant in it that has equipment that needs 
+   repair, it automatically switches to low power mode.
+
+Cost:
+ - Single: Stuff x75, Component x2, Steel x35, Plasteel x15, Power 45/Apparel 90/Weapon
+ - Double: Stuff x150, Component x4, Steel x70, Plasteel x30, Power 45/Apparel 90/Weapon
+ - Royal: Stuff x220, Gold x50, Component x4, Steel x70, Plasteel x30, Power 45/Apparel 90/Weapon
+ - Hospital: Stuff x80, Component x2, Steel x120, Plasteel x15, Medicine x10, Power 45/Apparel 90/Weapon
+		</description>
+</ModMetaData>
