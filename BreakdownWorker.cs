@@ -7,6 +7,8 @@ namespace Ogre.NanoRepairTech
 	{
 		public BreakdownWorker() { }
 
+		//===============================================================================\\
+
 		internal static float GetTechScaler(Thing ingredient)
 		{
 			if (ingredient == null || ingredient.def == null)
@@ -30,6 +32,8 @@ namespace Ogre.NanoRepairTech
 					return 0;
 			}
 		}
+
+		//===============================================================================\\
 
 		public override void ConsumeIngredient(Thing ingredient, RecipeDef recipe, Map map)
 		{

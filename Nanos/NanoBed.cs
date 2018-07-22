@@ -12,7 +12,8 @@ namespace Ogre.NanoRepairTech
 		//private static readonly float RARE_TICKS_PER_YEAR = 1200000f;
 
 		private NanoRepair _nano;
-		public NanoBed() {
+		public NanoBed()
+		{
 			_nano = new NanoRepair();
 		}
 
@@ -43,9 +44,10 @@ namespace Ogre.NanoRepairTech
 
 					if (NanoRepair.IsWeaponResearchComplete())
 					{
-						if(occupant.equipment != null && occupant.equipment.GetDirectlyHeldThings() != null)
+						if (occupant.equipment != null && occupant.equipment.GetDirectlyHeldThings() != null)
 						{
-							weapons.AddRange(new List<Thing>(occupant.equipment.GetDirectlyHeldThings()).Where(x => {
+							weapons.AddRange(new List<Thing>(occupant.equipment.GetDirectlyHeldThings()).Where(x =>
+							{
 								return (x != null)
 									&& (x.def != null)
 									&& (x.def.IsRangedWeapon || x.def.IsMeleeWeapon);
@@ -79,7 +81,7 @@ namespace Ogre.NanoRepairTech
 
 					if (p.equipment != null)
 					{
-						foreach(Thing w in new List<Thing>(p.equipment.GetDirectlyHeldThings()).Where(x => x != null))
+						foreach (Thing w in new List<Thing>(p.equipment.GetDirectlyHeldThings()).Where(x => x != null))
 						{
 							possibleIDs.Add(w.thingIDNumber);
 						}
@@ -87,7 +89,7 @@ namespace Ogre.NanoRepairTech
 				}
 
 				_nano.CleanUpTickTracker(possibleIDs);
-				
+
 			}
 			_nano.Persist();
 		}
@@ -97,7 +99,8 @@ namespace Ogre.NanoRepairTech
 		public TickData GenerateTickData()
 		{
 			float restEffectiveness = this.GetStatValue(StatDefOf.BedRestEffectiveness, false);
-			return new TickData() {
+			return new TickData()
+			{
 				Accumulated = 0,
 				TickAmount = 250 * (1 + (restEffectiveness - 1) + (_nano.DetermineQualityModifier() - 1))
 			};
