@@ -17,13 +17,13 @@
 			<max>24</max>
 		</deepLumpSizeRange>
 		<statBases>
-			<MarketValue>1.2</MarketValue>
+			<MarketValue>2.7</MarketValue>
 			<MaxHitPoints>150</MaxHitPoints>
 			<Mass>0.05</Mass>
 			<Flammability>1.0</Flammability>
 			<DeteriorationRate>1.0</DeteriorationRate>
 		</statBases>
-		<tradeability>Sellable</tradeability>
+		<tradeability>All</tradeability>
 		<thingCategories>
 			<li>Manufactured</li>
 		</thingCategories>
@@ -46,7 +46,7 @@
 			<max>24</max>
 		</deepLumpSizeRange>
 		<statBases>
-			<MarketValue>0.8</MarketValue>
+			<MarketValue>1.1</MarketValue>
 			<MaxHitPoints>150</MaxHitPoints>
 			<Mass>0.05</Mass>
 			<Flammability>1.0</Flammability>

@@ -3,33 +3,77 @@
 		<name>Nano Repair Tech</name>
 		<author>Ogre</author>
 		<targetVersion>1.0.0</targetVersion>
-		<description>Beds that consume power to slowly mend equipped clothing/apparel and repair weapons while you sleep.
-		
-Required research:
+		<description>Allows construction of Nano Repair Units which slowly consume power and fuel to repair apparel and weapons.
+Units:
  - Beds
- - MicroElectronics Basics
- - Mending Beds Basic
- - Mending Beds (Weapons) -> Existing and new Mending Beds will now also
-   repair equipped weapons
- - Mending Beds (Advanced) -> Allows construction of adv. mending beds, these beds can
-   be constructed by a skilled constructor; they are more comfortable and repair apparel
-   at an increased rate, and weapons at a greatly increased rate. More power is needed 
-   to power the bed and construction requirements include more components and small
-   amounts of the rare metals gold and uranium.
- - Hospital Beds (for hospital version)
+  + (single, double, hospital) - repair equipped apparel / weapons 
+    while you sleep in them.
+ - Shelves
+  + (2x1, 1x1) - repair apparel / weapons stored on them.
+  + includes 1x1 regular shelf in addition to the 1x1 nano shelf, not 
+    sure why there isn't one already in the base game
  
 Info:
- - The rate at which mending / repair work is done is determined by the quality 
-   of the bed. And is displayed in the info section.
- - Beds that are not powered or toggled off, just become regular 
-   beds ( i.e. you can still sleep in them ).
- - When a bed does not have an occupant in it that has equipment that needs 
-   repair, it automatically switches to low power mode.
+ - The rate at which repair work is done is determined by the quality of the 
+   nano unit. and is displayed in the info section.
+ - Units that are powered off still do their base functionality 
+   (ie you can still sleep in beds, and store things on shelves 
+   that are not powered/fueled)
+ - When not actively repairing anything, nano units automatically 
+   go into low power consumption mode.
+ - Fuel is consumed at a relatively slow rate. 1 Fuel heals 4 HP. 
+   During my testing around 1 fill up per year.
+ - Fuel is initially created at the machining bench, and with 
+   further research at the refinery. 
+ - Shelves repair at the same rate over 24 hours as beds do for 8 hours. 
+   i.e. if you sleep all night with a duster on, the amount of repair done 
+   to it by a bed would have been the same as if it had been on a shelf all day
+ - Shelves are particularly useful by a stockpile. Set the allowed HP range 
+   from 0-99 and pawns will automatically take items off the shelf when they 
+   are fully repaired, and put something else on that needs repaired.
 
-Cost:
- - Single: Stuff x75, Component x2, Steel x35, Plasteel x15, Power 45/Apparel 90/Weapon
- - Double: Stuff x150, Component x4, Steel x70, Plasteel x30, Power 45/Apparel 90/Weapon
- - Royal: Stuff x220, Gold x50, Component x4, Steel x70, Plasteel x30, Power 45/Apparel 90/Weapon
- - Hospital: Stuff x80, Component x2, Steel x120, Plasteel x15, Medicine x10, Power 45/Apparel 90/Weapon
+Research:
+Nano Repair Tech (basic tech):
+This research allows construction of Nano Repair Units (beds / shelves). 
+These basic units will repair apparel only.
+
+Apparel Breakdown:
+Break down apparel (tainted and/or non-tainted), at the biofuel refinery 
+into base Nano Tech chemicals. This break down process is very desctructive 
+and the majority of useful chemicals is destroyed.
+
+Nano Tech Refining:
+Refine base Nano Tech chemicals with small amounts of textile or 
+leather into Nano Tech Fuel. This process requires chemfuel as a catalyst.
+
+Nanite Extender Arm (weapons tech):
+Alter the nanites used in nano tech units to incorporate an extender arm. 
+This modification, with an increased power requirement, makes it possible to repair 
+weaponry in addition to apparel.
+
+Power Shielding (advanced tech):
+Further alter the nanites used in nano tech units to greatly increase their 
+electric shielding. This lets the nanites operate at higher wattages, increasing 
+and repair rate for apparel and greatly increasing their rate for weapons.
+
+Changes for v1.0:
+ - The advanced tech no longer requires an entire new set of units to be made, 
+   the upgrades are applied to the units after the research is complete. I did 
+   this because with an advanced teir, it felt like a waste of resources to build 
+   the lower teir. With this change the nano tech units are useful as soon 
+   as they are researched, and more research will make them better without 
+   having to deconstruct/replace them. 
+ - Renamed (Bending Beds -> Nano Repair Tech)
+ - The electricity only repair seemed too cheaty for a lot of people, even 
+   with the slow repair rate. With the added fuel requirement it 
+   feels much more balanced.
+ - Added shelves
+ - Patched bulk traders so that you could sell any extra nano tech fuel you didn't 
+   want to store. It's not worth very much, but depending on how much you get raided, 
+   you could end up with a lot of it via Apparel Breakdown research 
+   from dead raiders apparel.
+
+GitHub: https://github.com/cmdprompt/NanoRepairTech
+B18: https://steamcommunity.com/sharedfiles/filedetails/?id=1242508171
 		</description>
 </ModMetaData>

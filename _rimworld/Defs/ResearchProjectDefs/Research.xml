@@ -25,7 +25,7 @@
 		<defName>Ogre_NanoTech_Breakdown</defName>
 		<label>Apparel Breakdown</label>
 		<tab>Ogre_NanoTechResearchTab</tab>
-		<description>Break down apparel, tainted and/or non-tainted, at the biofuel refinery into a multitude of chemicals which can be further refined into Nano Tech fuel with further research.</description>
+		<description>Break down apparel, tainted and/or non-tainted, at the biofuel refinery into a multitude of chemicals which can be further refined into Nano Tech fuel with further research. This process is very destructive and the majority of useful chemicals obtained from the apparel is lost.</description>
 		<baseCost>1000</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
@@ -39,9 +39,9 @@
 
 	<ResearchProjectDef>
 		<defName>Ogre_NanoTech_Refine</defName>
-		<label>Refining</label>
+		<label>Nano Tech Refining</label>
 		<tab>Ogre_NanoTechResearchTab</tab>
-		<description>Refine nano tech fuel base and small amounts of textile/leather into nano tech fuel. This process requires chemfuel as a catalyst.</description>
+		<description>Further refine nano tech fuel base with textile/leather into nano tech fuel. This process requires chemfuel as a catalyst.</description>
 		<baseCost>1000</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
