@@ -3,78 +3,80 @@
 		<name>Nano Repair Tech</name>
 		<author>Ogre</author>
 		<targetVersion>1.0.0</targetVersion>
-		<description>
-			Allows construction of Nano Repair Units which slowly consume power and fuel to repair apparel and weapons.
-			Units:
-			- Beds
-			+ (single, double, hospital) - repair equipped apparel / weapons
-			while you sleep in them.
-			- Shelves
-			+ (2x1, 1x1) - repair apparel / weapons stored on them.
-			+ includes 1x1 regular shelf in addition to the 1x1 nano shelf, not
-			sure why there isn't one already in the base game
+		<description><![CDATA[<size=30><color=#ffa500ff>             —  NANO REPAIR TECH  —</color></size>
 
-			Info:
-			- The rate at which repair work is done is determined by the quality of the
-			nano unit. and is displayed in the info section.
-			- Units that are powered off still do their base functionality
-			(ie you can still sleep in beds, and store things on shelves
-			that are not powered/fueled)
-			- When not actively repairing anything, nano units automatically
-			go into low power consumption mode.
-			- Fuel is consumed at a relatively slow rate. 1 Fuel heals 4 HP.
-			During my testing around 1 fill up per year.
-			- Fuel is initially created at the machining bench, and with
-			further research at the refinery.
-			- Shelves repair at the same rate over 24 hours as beds do for 8 hours.
-			i.e. if you sleep all night with a duster on, the amount of repair done
-			to it by a bed would have been the same as if it had been on a shelf all day
-			- Shelves are particularly useful by a stockpile. Set the allowed HP range
-			from 0-99 and pawns will automatically take items off the shelf when they
-			are fully repaired, and put something else on that needs repaired.
+<size=16><b>Allows construction of Nano Repair Units which slowly consume power and fuel to repair apparel and weapons.</b></size>
 
-			Research:
-			Nano Repair Tech (basic tech):
-			This research allows construction of Nano Repair Units (beds / shelves).
-			These basic units will repair apparel only.
+<size=15><color=#1a8bffff>UNITS:</color></size>
+• <color=#fffd43ff>Beds</color>
+  ◦ (single, double, hospital) - repair equipped apparel / weapons while you sleep in them.
 
-			Apparel Breakdown:
-			Break down apparel (tainted and/or non-tainted), at the biofuel refinery
-			into base Nano Tech chemicals. This break down process is very desctructive
-			and the majority of useful chemicals is destroyed.
+• <color=#fffd43ff>Shelves</color>
+  ◦ (2x1, 1x1) - repair apparel / weapons stored on them.
+  ◦ includes 1x1 regular shelf in addition to the 1x1 nano shelf, not sure why there isn't one 
+    already in the base game
 
-			Nano Tech Refining:
-			Refine base Nano Tech chemicals with small amounts of textile or
-			leather into Nano Tech Fuel. This process requires chemfuel as a catalyst.
 
-			Nanite Extender Arm (weapons tech):
-			Alter the nanites used in nano tech units to incorporate an extender arm.
-			This modification, with an increased power requirement, makes it possible to repair
-			weaponry in addition to apparel.
+<size=15><color=#1a8bffff>INFO:</color></size>
+• The rate at which repair work is done is determined by the quality of the nano unit. and 
+  is displayed in the info section.
+• Units that are powered off still do their base functionality (ie you can still sleep in 
+  beds, and store things on shelves that are not powered/fueled)
+• When not actively repairing anything, nano units automatically go into low power 
+  consumption mode.
+• Fuel is consumed at a relatively slow rate. 1 Fuel heals 4 HP. During my testing around 
+  1 fill up per year.
+• Fuel is initially created at the machining bench, and with further research at the 
+  refinery from unwanted apparel (including tainted). 
+• Shelves repair at the same rate over 24 hours as beds do for 8 hours. i.e. if you sleep 
+  all night with a duster on, the amount of repair done to it by a bed would have been the 
+  same as if it had been on a shelf all day
+• Shelves are particularly useful by a stockpile. Set the allowed HP range from 0-99 and 
+  pawns will automatically take items off the shelf when they are fully repaired, and put 
+  something else on that needs repaired.
 
-			Power Shielding (advanced tech):
-			Further alter the nanites used in nano tech units to greatly increase their
-			electric shielding. This lets the nanites operate at higher wattages, increasing
-			and repair rate for apparel and greatly increasing their rate for weapons.
 
-			Changes for v1.0:
-			- The advanced tech no longer requires an entire new set of units to be made,
-			the upgrades are applied to the units after the research is complete. I did
-			this because with an advanced teir, it felt like a waste of resources to build
-			the lower teir. With this change the nano tech units are useful as soon
-			as they are researched, and more research will make them better without
-			having to deconstruct/replace them.
-			- Renamed (Bending Beds -> Nano Repair Tech)
-			- The electricity only repair seemed too cheaty for a lot of people, even
-			with the slow repair rate. With the added fuel requirement it
-			feels much more balanced.
-			- Added shelves
-			- Patched bulk traders so that they buy/sell nano tech fuel. It's market worth 
-			is roughly that of wool, which isn't very much, but depending on how much 
-			you get raided, you could end up with a lot of it via Apparel Breakdown 
-			research from dead raiders apparel.
+<size=15><color=#1a8bffff>RESEARCH:</color></size>
+• <color=#fffd43ff>Nano Repair Tech (basic tech):</color>
+  ◦ This research allows construction of Nano Repair Units (beds / shelves). These basic 
+    units will repair apparel only.
 
-			GitHub: https://github.com/cmdprompt/NanoRepairTech
-			B18: https://steamcommunity.com/sharedfiles/filedetails/?id=1242508171
+• <color=#fffd43ff>Apparel Breakdown:</color>
+  ◦ Break down apparel (tainted and/or non-tainted), at the biofuel refinery into base Nano
+    Tech chemicals. This break down process is very desctructive and the majority of useful
+    chemicals are destroyed.
+
+• <color=#fffd43ff>Nano Tech Refining:</color>
+  ◦ Refine base Nano Tech chemicals with small amounts of textile or leather into Nano Tech 
+    Fuel. This process requires chemfuel as a catalyst.
+
+• <color=#fffd43ff>Nanite Extender Arm (weapons tech):</color>
+  ◦ Alter the nanites used in nano tech units to incorporate an extender arm. This 
+    modification, with an increased power requirement, makes it possible to repair
+    weaponry in addition to apparel.
+
+• <color=#fffd43ff>Power Shielding (advanced tech):</color>
+  ◦ Further alter the nanites used in nano tech units to greatly increase their electric 
+    shielding. This lets the nanites operate at higher wattages, increasing and repair 
+    rate for apparel and greatly increasing their rate for weapons.
+
+
+<size=15><color=#1a8bffff>CHANGES FOR v1.0:</color></size>
+• The advanced tech no longer requires an entire new set of units to be made, the upgrades 
+  are applied to the units after the research is complete. I did this because with an 
+  advanced teir, it felt like a waste of resources to build the lower teir. With this change 
+  the nano tech units are useful as soon as they are researched, and more research will make 
+  them better without having to deconstruct/replace them.
+• Renamed (Bending Beds -> Nano Repair Tech)
+• The electricity only repair seemed too cheaty for a lot of people, even with the slow 
+  repair rate. With the added fuel requirement it feels much more balanced.
+• Added shelves
+• Patched bulk traders so that they buy/sell nano tech fuel. It's market worth is roughly 
+  that of wool, which isn't very much, but depending on how much you get raided, you could 
+  end up with a lot of it via Apparel Breakdown research from dead raiders apparel.
+
+<size=13><color=#ffa500ff>GitHub:</color> <color=#fdfca2ff>https://github.com/cmdprompt/NanoRepairTech</color></size>
+<size=13><color=#ffa500ff>B18:</color> <color=#fdfca2ff>https://steamcommunity.com/sharedfiles/filedetails/?id=1242508171</color></size>
+]]>
 		</description>
 </ModMetaData>
