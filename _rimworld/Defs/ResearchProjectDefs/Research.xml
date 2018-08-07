@@ -29,11 +29,9 @@
 		<baseCost>1000</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
-			<li>Ogre_NanoTech</li>
 			<li>BiofuelRefining</li>
 		</prerequisites>
-		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<researchViewX>1</researchViewX>
+		<researchViewX>0</researchViewX>
 		<researchViewY>0</researchViewY>
 	</ResearchProjectDef>
 
@@ -45,10 +43,11 @@
 		<baseCost>1000</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
+			<li>Ogre_NanoTech</li>
 			<li>Ogre_NanoTech_Breakdown</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<researchViewX>2</researchViewX>
+		<researchViewX>1</researchViewX>
 		<researchViewY>0</researchViewY>
 	</ResearchProjectDef>
 	
