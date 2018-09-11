@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Ogre_Make_NaniteFuel.label>ナノ修復材を作る</Ogre_Make_NaniteFuel.label>
+  <Ogre_Make_NaniteFuel.description>様々な種類の繊維や皮革とスチールと組み合わせてナノ修復材を作ります。この修復材は、衣服や武器のダメージを修理したり、回復したりするナノテクノロジーの修理部門などで使用されています。このプロセスには触媒としてバイオ化学燃料を必要とする場合もあります。</Ogre_Make_NaniteFuel.description>
+  <Ogre_Make_NaniteFuel.jobString>ナノ修復材を製作中</Ogre_Make_NaniteFuel.jobString>
+
+  <Ogre_Make_NanoTechFuelBase.label>衣服を精錬分解する</Ogre_Make_NanoTechFuelBase.label>
+  <Ogre_Make_NanoTechFuelBase.description>衣服をナノ修復技術ユニットの材料として役立つ化学物質の混合物に精錬分解します。抽出される化学物質の量は、衣服のダメージ状態や、生産に必要な技術レベルに関係しています。例えば部族マスクよりも多くの化学物質を海兵隊アーマー(旧パワーアーマー)から抽出することができます。</Ogre_Make_NanoTechFuelBase.description>
+  <Ogre_Make_NanoTechFuelBase.jobString>衣服を精錬分解中</Ogre_Make_NanoTechFuelBase.jobString>
+
+  <Ogre_Make_NanoTechFuelFromBase.label>修復用混合物を精錬する</Ogre_Make_NanoTechFuelFromBase.label>
+  <Ogre_Make_NanoTechFuelFromBase.description>「修復用混合物」と少量の繊維または皮革を材料にして「ナノ修復材」へ精錬します。このプロセスには触媒としてバイオ化学燃料を必要とします。</Ogre_Make_NanoTechFuelFromBase.description>
+  <Ogre_Make_NanoTechFuelFromBase.jobString>修復用混合物を精錬中</Ogre_Make_NanoTechFuelFromBase.jobString>
+
+
+</LanguageData>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Just Regular 1x1 shelf (same gFX as nano 1x1 shelf) -->
+
+  <Ogre_1x1_Shelf.label>ロッカー(1x1)</Ogre_1x1_Shelf.label>
+  <Ogre_1x1_Shelf.description>様々な物品を保管するためのロッカーです。この中に保存されたアイテムは、ロッカーが外気に触れていても劣化しません。</Ogre_1x1_Shelf.description>
+  <Blueprint_Ogre_1x1_Shelf.label>ロッカー(1x1)(設計)</Blueprint_Ogre_1x1_Shelf.label>
+  <Blueprint_Install_Ogre_1x1_Shelf.label>ロッカー(1x1)(移動先)</Blueprint_Install_Ogre_1x1_Shelf.label>
+  <Frame_Ogre_1x1_Shelf.label>ロッカー(1x1)(施工)</Frame_Ogre_1x1_Shelf.label>
+  <Frame_Ogre_1x1_Shelf.description>様々な物品を保管するためのロッカーです。この中に保存されたアイテムは、ロッカーが外気に触れていても劣化しません。</Frame_Ogre_1x1_Shelf.description>
+
+
+  <!-- Beds -->
+
+  <Ogre_NanoTech_Bed.label>ベッド (ナノ修復)</Ogre_NanoTech_Bed.label>
+  <Ogre_NanoTech_Bed.description>フレームの上に心地よいマットレスとシーツが掛けてある、休息する為のベッドです。電力を消費して衣服や武器のダメージをゆっくり修復します。</Ogre_NanoTech_Bed.description>
+  <Blueprint_Ogre_NanoTech_Bed.label>ベッド (ナノ修復)(設計)</Blueprint_Ogre_NanoTech_Bed.label>
+  <Blueprint_Install_Ogre_NanoTech_Bed.label>ベッド (ナノ修復)(移動先)</Blueprint_Install_Ogre_NanoTech_Bed.label>
+  <Frame_Ogre_NanoTech_Bed.label>ベッド (ナノ修復)(施工)</Frame_Ogre_NanoTech_Bed.label>
+  <Frame_Ogre_NanoTech_Bed.description>フレームの上に心地よいマットレスとシーツが掛けてある、休息する為のベッドです。電力を消費して衣服や武器のダメージをゆっくり修復します。</Frame_Ogre_NanoTech_Bed.description>
+
+  <Ogre_NanoTech_DoubleBed.label>ダブルベッド (ナノ修復)</Ogre_NanoTech_DoubleBed.label>
+  <Ogre_NanoTech_DoubleBed.description>シンプルで、二人で寝るにはちょうど良いダブルベッドです。電力を消費して衣服や武器のダメージをゆっくり修復します。</Ogre_NanoTech_DoubleBed.description>
+  <Blueprint_Ogre_NanoTech_DoubleBed.label>ダブルベッド (ナノ修復)(設計)</Blueprint_Ogre_NanoTech_DoubleBed.label>
+  <Blueprint_Install_Ogre_NanoTech_DoubleBed.label>ダブルベッド (ナノ修復)(移動先)</Blueprint_Install_Ogre_NanoTech_DoubleBed.label>
+  <Frame_Ogre_NanoTech_DoubleBed.label>ダブルベッド (ナノ修復)(施工)</Frame_Ogre_NanoTech_DoubleBed.label>
+  <Frame_Ogre_NanoTech_DoubleBed.description>シンプルで、二人で寝るにはちょうど良いダブルベッドです。電力を消費して衣服や武器のダメージをゆっくり修復します。</Frame_Ogre_NanoTech_DoubleBed.description>
+
+  <Ogre_NanoTech_RoyalBed.label>豪華なベッド (ナノ修復)</Ogre_NanoTech_RoyalBed.label>
+  <Ogre_NanoTech_RoyalBed.description>高貴な生まれの方にピッタリの豪華な金がちりばめられたベッドです。非常に快適で美しく、二人で寝るのにぴったりです。電力を消費して衣服や武器のダメージをゆっくり修復します。</Ogre_NanoTech_RoyalBed.description>
+  <Blueprint_Ogre_NanoTech_RoyalBed.label>豪華なベッド (ナノ修復)(設計)</Blueprint_Ogre_NanoTech_RoyalBed.label>
+  <Blueprint_Install_Ogre_NanoTech_RoyalBed.label>豪華なベッド (ナノ修復)(移動先)</Blueprint_Install_Ogre_NanoTech_RoyalBed.label>
+  <Frame_Ogre_NanoTech_RoyalBed.label>豪華なベッド (ナノ修復)(施工)</Frame_Ogre_NanoTech_RoyalBed.label>
+  <Frame_Ogre_NanoTech_RoyalBed.description>高貴な生まれの方にピッタリの豪華な金がちりばめられたベッドです。非常に快適で美しく、二人で寝るのにぴったりです。電力を消費して衣服や武器のダメージをゆっくり修復します。</Frame_Ogre_NanoTech_RoyalBed.description>
+
+  <Ogre_NanoTech_HospitalBed.label>病院用ベッド (ナノ修復)</Ogre_NanoTech_HospitalBed.label>
+  <Ogre_NanoTech_HospitalBed.description>怪我人の為に考えられた特製の病院用ベッドです。治療行為の成功率が良くなります。電力を消費して衣服や武器のダメージをゆっくり修復します。</Ogre_NanoTech_HospitalBed.description>
+  <Blueprint_Ogre_NanoTech_HospitalBed.label>病院用ベッド (ナノ修復)(設計)</Blueprint_Ogre_NanoTech_HospitalBed.label>
+  <Blueprint_Install_Ogre_NanoTech_HospitalBed.label>病院用ベッド (ナノ修復)(移動先)</Blueprint_Install_Ogre_NanoTech_HospitalBed.label>
+  <Frame_Ogre_NanoTech_HospitalBed.label>病院用ベッド (ナノ修復)(施工)</Frame_Ogre_NanoTech_HospitalBed.label>
+  <Frame_Ogre_NanoTech_HospitalBed.description>怪我人の為に考えられた特製の病院用ベッドです。治療行為の成功率が良くなります。電力を消費して衣服や武器のダメージをゆっくり修復します。</Frame_Ogre_NanoTech_HospitalBed.description>
+
+  <Ogre_NanoTech_2x1_Shelf.label>ロッカー(2x1) (ナノ修復)</Ogre_NanoTech_2x1_Shelf.label>
+  <Ogre_NanoTech_2x1_Shelf.description>様々な物品を保管するためのロッカーです。この中に保存されたアイテムは、ロッカーが外気に触れていても劣化しません。衣服や武器を保管するために使用された場合、アイテムのHPがゆっくりと修復されます。</Ogre_NanoTech_2x1_Shelf.description>
+  <Blueprint_Ogre_NanoTech_2x1_Shelf.label>ロッカー(2x1) (ナノ修復)(設計)</Blueprint_Ogre_NanoTech_2x1_Shelf.label>
+  <Blueprint_Install_Ogre_NanoTech_2x1_Shelf.label>ロッカー(2x1) (ナノ修復)(移動先)</Blueprint_Install_Ogre_NanoTech_2x1_Shelf.label>
+  <Frame_Ogre_NanoTech_2x1_Shelf.label>ロッカー(2x1) (ナノ修復)(施工)</Frame_Ogre_NanoTech_2x1_Shelf.label>
+  <Frame_Ogre_NanoTech_2x1_Shelf.description>様々な物品を保管するためのロッカーです。この中に保存されたアイテムは、ロッカーが外気に触れていても劣化しません。衣服や武器を保管するために使用された場合、アイテムのHPがゆっくりと修復されます。</Frame_Ogre_NanoTech_2x1_Shelf.description>
+
+  <Ogre_NanoTech_1x1_Shelf.label>ロッカー(1x1) (ナノ修復)</Ogre_NanoTech_1x1_Shelf.label>
+  <Ogre_NanoTech_1x1_Shelf.description>様々な物品を保管するためのロッカーです。この中に保存されたアイテムは、ロッカーが外気に触れていても劣化しません。衣服や武器を保管するために使用された場合、アイテムのHPがゆっくりと修復されます。</Ogre_NanoTech_1x1_Shelf.description>
+  <Blueprint_Ogre_NanoTech_1x1_Shelf.label>ロッカー(1x1) (ナノ修復)(設計)</Blueprint_Ogre_NanoTech_1x1_Shelf.label>
+  <Blueprint_Install_Ogre_NanoTech_1x1_Shelf.label>ロッカー(1x1) (ナノ修復)(移動先)</Blueprint_Install_Ogre_NanoTech_1x1_Shelf.label>
+  <Frame_Ogre_NanoTech_1x1_Shelf.label>ロッカー(1x1) (ナノ修復)(施工)</Frame_Ogre_NanoTech_1x1_Shelf.label>
+  <Frame_Ogre_NanoTech_1x1_Shelf.description>様々な物品を保管するためのロッカーです。この中に保存されたアイテムは、ロッカーが外気に触れていても劣化しません。衣服や武器を保管するために使用された場合、アイテムのHPがゆっくりと修復されます。</Frame_Ogre_NanoTech_1x1_Shelf.description>
+
+
+</LanguageData>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Apparel -->
+
+  <Ogre_NanoApparelRate.label>ナノ修復率（衣料）</Ogre_NanoApparelRate.label>
+  <Ogre_NanoApparelRate.description>ナノ修復ユニットが衣服を修理するスピードです。</Ogre_NanoApparelRate.description>
+  <Ogre_NanoApparelRate.formatString>{0}%</Ogre_NanoApparelRate.formatString>
+
+
+  <!-- Weapons -->
+
+  <Ogre_NanoWeaponsRate.label>ナノ修復率（武器）</Ogre_NanoWeaponsRate.label>
+  <Ogre_NanoWeaponsRate.description>ナノ修復ユニットが武器を修理するスピードです。</Ogre_NanoWeaponsRate.description>
+  <Ogre_NanoWeaponsRate.formatString>{0}%</Ogre_NanoWeaponsRate.formatString>
+
+
+</LanguageData>
