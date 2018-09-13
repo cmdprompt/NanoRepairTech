@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Ogre_NanoTechFuel.label>ナノ修復材</Ogre_NanoTechFuel.label>
+  <Ogre_NanoTechFuel.description>スチールや繊維/皮革から作られる修復用混合物や、バイオ化学燃料などの合成物質です。各種のベッド(修復)やロッカー(修復)は、このアイテムを消費して武器や衣服を修理することができます。</Ogre_NanoTechFuel.description>
+
+  <Ogre_NanoTechFuelBase.label>修復用混合物</Ogre_NanoTechFuelBase.label>
+  <Ogre_NanoTechFuelBase.description>衣服から精錬された非常に粘性のある化学物質の混合物です。 ナノ修復材を作るために精錬することができます。</Ogre_NanoTechFuelBase.description>
+
+
+</LanguageData>
