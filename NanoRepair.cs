@@ -299,7 +299,7 @@ namespace Ogre.NanoRepairTech
 							.First(x => x.defName == "Ogre_NanoTech_Weapons");
 
 						if (_researchDefWeapons == null)
-							throw new NullReferenceException("Could not find ResearchDef: (Ogre_Nano_Weapons)");
+							throw new NullReferenceException("Could not find ResearchDef: (Ogre_NanoTech_Weapons)");
 					}
 				}
 			}
@@ -320,7 +320,7 @@ namespace Ogre.NanoRepairTech
 							.First(x => x.defName == "Ogre_NanoTech_Advanced");
 
 						if (_researchDefAdvanced == null)
-							throw new NullReferenceException("Could not find ResearchDef: (Ogre_Nano_Weapons)");
+							throw new NullReferenceException("Could not find ResearchDef: (Ogre_NanoTech_Advanced)");
 					}
 				}
 			}
