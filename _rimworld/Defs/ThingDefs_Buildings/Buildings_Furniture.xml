@@ -1,76 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- Remove all this in 1.0 version, dont need to copy/paste the base classes -->
-	<!--
-	<ThingDef Name="FurnitureBase" ParentName="BuildingBase" Abstract="True">
-		<designationCategory>Furniture</designationCategory>
-		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsFurniture</li>
-		</thingCategories>
-	</ThingDef>
-	
-	<ThingDef Name="FurnitureWithQualityBase" ParentName="FurnitureBase" Abstract="True">
-		<comps>
-			<li>
-				<compClass>CompQuality</compClass>
-			</li>
-		</comps>
-	</ThingDef>
-
-	<ThingDef Name="ArtableFurnitureBase" ParentName="FurnitureWithQualityBase" Abstract="True">
-		<comps>
-			<li Class="CompProperties_Art">
-				<nameMaker>NamerArtFurniture</nameMaker>
-				<descriptionMaker>ArtDescription_Furniture</descriptionMaker>
-				<minQualityForArtistic>Excellent</minQualityForArtistic>
-			</li>
-		</comps>
-		<inspectorTabs>
-			<li>ITab_Art</li>
-		</inspectorTabs>
-	</ThingDef>
-
-	<ThingDef ParentName="FurnitureBase" Name="BedBase" Abstract="True">
-		<thingClass>Building_Bed</thingClass>
-		<altitudeLayer>Building</altitudeLayer>
-		<comps>
-			<li Class="CompProperties_RoomIdentifier">
-				<roomStat>Impressiveness</roomStat>
-			</li>
-		</comps>
-		<drawGUIOverlay>true</drawGUIOverlay>
-		<canOverlapZones>false</canOverlapZones>
-		<placeWorkers>
-			<li>PlaceWorker_ShowFacilitiesConnections</li>
-		</placeWorkers>
-		<passability>PassThroughOnly</passability>
-		<defaultPlacingRot>South</defaultPlacingRot>
-	</ThingDef>
-
-	<ThingDef Name="BedWithQualityBase" ParentName="BedBase" Abstract="True">
-		<comps>
-			<li>
-				<compClass>CompQuality</compClass>
-			</li>
-		</comps>
-	</ThingDef>
-
-	<ThingDef Name="ArtableBedBase" ParentName="BedWithQualityBase" Abstract="True">
-		<comps>
-			<li Class="CompProperties_Art">
-				<nameMaker>NamerArtFurniture</nameMaker>
-				<descriptionMaker>ArtDescription_Furniture</descriptionMaker>
-				<minQualityForArtistic>Excellent</minQualityForArtistic>
-			</li>
-		</comps>
-		<inspectorTabs>
-			<li>ITab_Art</li>
-		</inspectorTabs>
-	</ThingDef>
-	-->
-	<!-- ===================================================== -->
-
 	<!-- Just Regular 1x1 shelf (same gFX as nano 1x1 shelf) -->
 	<ThingDef ParentName="FurnitureWithQualityBase">
 		<thingClass>Building_Storage</thingClass>
@@ -123,6 +52,7 @@
 		</researchPrerequisites>
 		<tradeability>None</tradeability>
 		<uiIconScale>0.70</uiIconScale>
+		<designationCategory>Ogre_NanoRepairTech_DesignationCategory</designationCategory>
 	</ThingDef>
 
 	<!-- Beds -->
@@ -198,13 +128,14 @@
 		<pathCost>60</pathCost>
 		<staticSunShadowHeight>0.17</staticSunShadowHeight>
 		<castEdgeShadows>True</castEdgeShadows>
-		<techLevel>Spacer</techLevel>
+		<techLevel>Industrial</techLevel>
 		<researchPrerequisites>
 			<li>Ogre_NanoTech</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 		<uiIconScale>0.90</uiIconScale>
 		<tradeability>None</tradeability>
+		<designationCategory>Ogre_NanoRepairTech_DesignationCategory</designationCategory>
 	</ThingDef>
 
 	<ThingDef ParentName="ArtableBedBase">
@@ -281,13 +212,14 @@
 		<leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
 		<staticSunShadowHeight>0.17</staticSunShadowHeight>
 		<castEdgeShadows>True</castEdgeShadows>
-		<techLevel>Spacer</techLevel>
+		<techLevel>Industrial</techLevel>
 		<researchPrerequisites>
 			<li>Ogre_NanoTech</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 		<uiIconScale>0.90</uiIconScale>
 		<tradeability>None</tradeability>
+		<designationCategory>Ogre_NanoRepairTech_DesignationCategory</designationCategory>
 	</ThingDef>
 
 	<ThingDef ParentName="ArtableBedBase">
@@ -365,13 +297,14 @@
 		<leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
 		<staticSunShadowHeight>0.17</staticSunShadowHeight>
 		<castEdgeShadows>True</castEdgeShadows>
-		<techLevel>Spacer</techLevel>
+		<techLevel>Industrial</techLevel>
 		<researchPrerequisites>
 			<li>Ogre_NanoTech</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 		<uiIconScale>0.90</uiIconScale>
 		<tradeability>None</tradeability>
+		<designationCategory>Ogre_NanoRepairTech_DesignationCategory</designationCategory>
 	</ThingDef>
 
 	<ThingDef ParentName="BedWithQualityBase">
@@ -449,11 +382,13 @@
 			<li>Ogre_NanoTech</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
-		<techLevel>Spacer</techLevel>
+		<techLevel>Industrial</techLevel>
 		<uiIconScale>0.90</uiIconScale>
 		<tradeability>None</tradeability>
+		<designationCategory>Ogre_NanoRepairTech_DesignationCategory</designationCategory>
 	</ThingDef>
 	
+	<!-- Shelves -->
 	<ThingDef ParentName="FurnitureWithQualityBase">
 		<thingClass>Ogre.NanoRepairTech.NanoShelf</thingClass>
 		<defName>Ogre_NanoTech_2x1_Shelf</defName>
@@ -530,6 +465,9 @@
 		</researchPrerequisites>
 		<tickerType>Rare</tickerType>
 		<tradeability>None</tradeability>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<designationCategory>Ogre_NanoRepairTech_DesignationCategory</designationCategory>
+		<techLevel>Industrial</techLevel>
 	</ThingDef>
 
 	<ThingDef ParentName="FurnitureWithQualityBase">
@@ -609,5 +547,170 @@
 		<tickerType>Rare</tickerType>
 		<tradeability>None</tradeability>
 		<uiIconScale>0.70</uiIconScale>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<designationCategory>Ogre_NanoRepairTech_DesignationCategory</designationCategory>
+		<techLevel>Industrial</techLevel>
+	</ThingDef>
+
+	<!-- Animal Beds -->
+	<ThingDef ParentName="FurnitureWithQualityBase">
+		<thingClass>Ogre.NanoRepairTech.NanoBed</thingClass>
+		<defName>Ogre_NanoTech_AnimalSleepingBox</defName>
+		
+		<label>nano tech animal sleeping box</label>
+		<description>A small box for animals to sleep in. Fits smaller animals like chickens, cats, or small dogs. Slowly repairs damage to equipped apparel/weaponry.</description>
+		<rotatable>false</rotatable>
+		<fillPercent>0.15</fillPercent>
+		<pathCost>40</pathCost>
+		<passability>PassThroughOnly</passability>
+		<canOverlapZones>false</canOverlapZones>
+		<graphicData>
+			<texPath>Things/Building/Misc/AnimalBed/AnimalSleepBox</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<rect>(0.05,0.05,0.9,0.9)</rect>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>60</basePowerConsumption>
+				<shortCircuitInRain>false</shortCircuitInRain>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>0</fuelConsumptionRate>
+				<fuelCapacity>25.0</fuelCapacity>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelFilter>
+					<thingDefs>
+						<li>Ogre_NanoTechFuel</li>
+					</thingDefs>
+				</fuelFilter>
+			</li>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+		</comps>
+		<castEdgeShadows>true</castEdgeShadows>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Steel>15</Steel>
+			<Plasteel>5</Plasteel>
+		</costList>
+		<building>
+			<bed_humanlike>false</bed_humanlike>
+			<bed_maxBodySize>0.55</bed_maxBodySize>
+			<bed_showSleeperBody>true</bed_showSleeperBody>
+			<bed_healPerDay>4</bed_healPerDay>
+		</building>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>180</WorkToBuild>
+			<Mass>3</Mass>
+			<BedRestEffectiveness>0.93</BedRestEffectiveness>
+			<Comfort>0.60</Comfort>
+			<ImmunityGainSpeedFactor>1.05</ImmunityGainSpeedFactor>
+			<SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+			<Ogre_NanoApparelRate>0</Ogre_NanoApparelRate>
+			<Ogre_NanoWeaponsRate>0</Ogre_NanoWeaponsRate>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<researchPrerequisites>
+			<li>Ogre_NanoTech</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<tickerType>Rare</tickerType>
+		<uiIconScale>0.75</uiIconScale>
+		<tradeability>None</tradeability>
+		<designationCategory>Ogre_NanoRepairTech_DesignationCategory</designationCategory>
+	</ThingDef>
+
+	<ThingDef ParentName="FurnitureWithQualityBase">
+		<thingClass>Ogre.NanoRepairTech.NanoBed</thingClass>
+		<defName>Ogre_NanoTech_AnimalBed</defName>
+		<label>nano tech animal bed</label>
+		<description>A soft bed for animals to sleep on. Fits any animal. Slowly repairs damage to equipped apparel/weaponry.</description>
+		<rotatable>false</rotatable>
+		<fillPercent>0.15</fillPercent>
+		<pathCost>40</pathCost>
+		<passability>PassThroughOnly</passability>
+		<canOverlapZones>false</canOverlapZones>
+		<graphicData>
+			<texPath>Things/Building/Misc/AnimalBed/AnimalBed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>60</basePowerConsumption>
+				<shortCircuitInRain>false</shortCircuitInRain>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>0</fuelConsumptionRate>
+				<fuelCapacity>25.0</fuelCapacity>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelFilter>
+					<thingDefs>
+						<li>Ogre_NanoTechFuel</li>
+					</thingDefs>
+				</fuelFilter>
+			</li>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+		</comps>
+		<castEdgeShadows>true</castEdgeShadows>
+		<uiIconScale>0.80</uiIconScale>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Steel>30</Steel>
+			<Plasteel>15</Plasteel>
+		</costList>
+		<building>
+			<bed_humanlike>false</bed_humanlike>
+			<bed_showSleeperBody>true</bed_showSleeperBody>
+			<bed_healPerDay>4</bed_healPerDay>
+		</building>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>140</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>400</WorkToBuild>
+			<Mass>10</Mass>
+			<BedRestEffectiveness>1</BedRestEffectiveness>
+			<Comfort>0.75</Comfort>
+			<ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
+			<SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+			<Ogre_NanoApparelRate>0</Ogre_NanoApparelRate>
+			<Ogre_NanoWeaponsRate>0</Ogre_NanoWeaponsRate>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<researchPrerequisites>
+			<li>Ogre_NanoTech</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<tickerType>Rare</tickerType>
+		<tradeability>None</tradeability>
+		<designationCategory>Ogre_NanoRepairTech_DesignationCategory</designationCategory>
 	</ThingDef>
 </Defs>
