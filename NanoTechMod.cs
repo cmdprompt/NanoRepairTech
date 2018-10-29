@@ -55,7 +55,7 @@ namespace Ogre.NanoRepairTech
 					nanoBed.description += " " + TranslatorFormattedStringExtensions.Translate("NanoTech.Description.Short");
 					nanoBed.thingClass = typeof(NanoBed);
 					nanoBed.shortHash = 0;
-					nanoBed.minifiedDef = null;
+					//nanoBed.minifiedDef = ThingDefOf.MinifiedThing;
 					nanoBed.tradeability = Tradeability.None;
 					nanoBed.scatterableOnMapGen = false;
 
@@ -121,7 +121,7 @@ namespace Ogre.NanoRepairTech
 							nanoBed.comps.Add(abf);
 						}
 
-						abf.compClass = typeof(CompFacility);
+						abf.compClass = typeof(CompAffectedByFacilities);
 
 						if (abf.linkableFacilities == null)
 							abf.linkableFacilities = new List<ThingDef>();
@@ -132,7 +132,13 @@ namespace Ogre.NanoRepairTech
 							if (!highlander.Contains(facility.defName))
 							{
 								abf.linkableFacilities.Add(facility);
+								Verse.Log.Message("Add: " + facility.defName);
 							}
+							else
+							{
+								Verse.Log.Message("Already: " + facility.defName);
+							}
+
 						}
 					}
 
