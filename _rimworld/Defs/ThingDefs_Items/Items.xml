@@ -9,6 +9,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<stackLimit>150</stackLimit>
+		<!--
 		<deepCommonality>2</deepCommonality>
 		<deepCountPerCell>600</deepCountPerCell>
 		<deepCountPerPortion>40</deepCountPerPortion>
@@ -16,6 +17,7 @@
 			<min>6</min>
 			<max>24</max>
 		</deepLumpSizeRange>
+		-->
 		<statBases>
 			<MarketValue>2.7</MarketValue>
 			<MaxHitPoints>150</MaxHitPoints>
@@ -38,6 +40,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<stackLimit>150</stackLimit>
+		<!--
 		<deepCommonality>2</deepCommonality>
 		<deepCountPerCell>600</deepCountPerCell>
 		<deepCountPerPortion>40</deepCountPerPortion>
@@ -45,6 +48,7 @@
 			<min>6</min>
 			<max>24</max>
 		</deepLumpSizeRange>
+		-->
 		<statBases>
 			<MarketValue>1.1</MarketValue>
 			<MaxHitPoints>150</MaxHitPoints>
