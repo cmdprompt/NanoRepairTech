@@ -684,7 +684,7 @@
 		<costList>
 			<ComponentIndustrial>2</ComponentIndustrial>
 			<Steel>30</Steel>
-			<Plasteel>15</Plasteel>
+			<Plasteel>5</Plasteel>
 		</costList>
 		<building>
 			<bed_humanlike>false</bed_humanlike>

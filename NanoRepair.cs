@@ -26,6 +26,8 @@ namespace Ogre.NanoRepairTech
 		private readonly static float LOW_TIER_WEAPONS = 0.5f;
 		private readonly static float LOW_TIER_POWER = 0.75f;
 
+		private readonly static float FUEL_RATE = 0.25f;
+
 		private static ResearchProjectDef _researchDefWeapons = null;
 		private static ResearchProjectDef _researchDefAdvanced = null;
 		private static readonly object _lock = new object();
@@ -139,7 +141,7 @@ namespace Ogre.NanoRepairTech
 
 			if (tickFuel > 0)
 			{
-				this.CmpRefuelable.ConsumeFuel(0.25f * tickFuel);
+				this.CmpRefuelable.ConsumeFuel(FUEL_RATE * tickFuel);
 			}
 		}
 

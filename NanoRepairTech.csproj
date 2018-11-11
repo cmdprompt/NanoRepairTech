@@ -43,6 +43,7 @@
     <Compile Include="NanoRepair.cs" />
     <Compile Include="Nanos\NanoShelf.cs" />
     <Compile Include="NanoTechMod.cs" />
+    <Compile Include="NanoUtil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\TickData.cs" />
   </ItemGroup>
