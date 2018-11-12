@@ -89,15 +89,20 @@ namespace Ogre.NanoRepairTech
 				}
 			}
 
-			if (nBed.researchPrerequisites == null)
-				nBed.researchPrerequisites = new List<ResearchProjectDef>();
-
 			bool found = false;
-			for (int i = 0; i < nBed.researchPrerequisites.Count && !found; i++)
-				found = (string.Compare(nBed.researchPrerequisites[i].defName, "Ogre_NanoTech", true) == 0);
+			nBed.researchPrerequisites = new List<ResearchProjectDef>();
+			if (bed.researchPrerequisites != null && bed.researchPrerequisites.Count > 0)
+			{
+				foreach (ResearchProjectDef d in bed.researchPrerequisites)
+				{
+					if (d.defName == "Ogre_NanoTech") { found = true; }
+					nBed.researchPrerequisites.Add(d);
+				}
+			}
 
 			if (!found)
 				nBed.researchPrerequisites.Add(ResearchProjectDef.Named("Ogre_NanoTech"));
+
 
 			nBed.defName += "_NanoBed";
 			nBed.description += "\n\n" + TranslatorFormattedStringExtensions.Translate("NanoTech.Description.Short");
