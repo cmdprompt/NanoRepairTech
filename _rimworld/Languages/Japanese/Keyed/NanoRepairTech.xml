@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <NanoTech.ModName>Nano Repair Tech</NanoTech.ModName>
+
+  <!-- added to the defname for other mods items -->
+  <NanoTech.ModName.Short>(ナノ修復)</NanoTech.ModName.Short>
+
+  <!-- Added to existing descriptions for other mods furniture that is supported -->
+  <NanoTech.Description.Short>装備している衣服や武器のダメージをゆっくり修復します。</NanoTech.Description.Short>
+
+</LanguageData>

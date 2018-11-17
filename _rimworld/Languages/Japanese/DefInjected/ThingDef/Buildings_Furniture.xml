@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
   <!-- Just Regular 1x1 shelf (same gFX as nano 1x1 shelf) -->
@@ -41,6 +41,9 @@
   <Frame_Ogre_NanoTech_HospitalBed.label>病院用ベッド (ナノ修復)(施工)</Frame_Ogre_NanoTech_HospitalBed.label>
   <Frame_Ogre_NanoTech_HospitalBed.description>怪我人の為に考えられた特製の病院用ベッドです。治療行為の成功率が良くなります。電力を消費して衣服や武器のダメージをゆっくり修復します。</Frame_Ogre_NanoTech_HospitalBed.description>
 
+
+  <!-- Shelves -->
+
   <Ogre_NanoTech_2x1_Shelf.label>ロッカー(2x1) (ナノ修復)</Ogre_NanoTech_2x1_Shelf.label>
   <Ogre_NanoTech_2x1_Shelf.description>様々な物品を保管するためのロッカーです。この中に保存されたアイテムは、ロッカーが外気に触れていても劣化しません。衣服や武器を保管するために使用された場合、アイテムのHPがゆっくりと修復されます。</Ogre_NanoTech_2x1_Shelf.description>
   <Blueprint_Ogre_NanoTech_2x1_Shelf.label>ロッカー(2x1) (ナノ修復)(設計)</Blueprint_Ogre_NanoTech_2x1_Shelf.label>
@@ -54,6 +57,23 @@
   <Blueprint_Install_Ogre_NanoTech_1x1_Shelf.label>ロッカー(1x1) (ナノ修復)(移動先)</Blueprint_Install_Ogre_NanoTech_1x1_Shelf.label>
   <Frame_Ogre_NanoTech_1x1_Shelf.label>ロッカー(1x1) (ナノ修復)(施工)</Frame_Ogre_NanoTech_1x1_Shelf.label>
   <Frame_Ogre_NanoTech_1x1_Shelf.description>様々な物品を保管するためのロッカーです。この中に保存されたアイテムは、ロッカーが外気に触れていても劣化しません。衣服や武器を保管するために使用された場合、アイテムのHPがゆっくりと修復されます。</Frame_Ogre_NanoTech_1x1_Shelf.description>
+
+
+  <!-- Animal Beds -->
+
+  <Ogre_NanoTech_AnimalSleepingBox.label>家畜小屋 (ナノ修復)</Ogre_NanoTech_AnimalSleepingBox.label>
+  <Ogre_NanoTech_AnimalSleepingBox.description>家畜が寝るための小さな小屋です。ニワトリやネコ、小さなイヌなどにぴったりです。衣服や武器のダメージをゆっくり修復します。</Ogre_NanoTech_AnimalSleepingBox.description>
+  <Blueprint_Ogre_NanoTech_AnimalSleepingBox.label>家畜小屋 (ナノ修復)(設計)</Blueprint_Ogre_NanoTech_AnimalSleepingBox.label>
+  <Blueprint_Install_Ogre_NanoTech_AnimalSleepingBox.label>家畜小屋 (ナノ修復)(移動先)</Blueprint_Install_Ogre_NanoTech_AnimalSleepingBox.label>
+  <Frame_Ogre_NanoTech_AnimalSleepingBox.label>家畜小屋 (ナノ修復)(施工)</Frame_Ogre_NanoTech_AnimalSleepingBox.label>
+  <Frame_Ogre_NanoTech_AnimalSleepingBox.description>家畜が寝るための小さな小屋です。ニワトリやネコ、小さなイヌなどにぴったりです。衣服や武器のダメージをゆっくり修復します。</Frame_Ogre_NanoTech_AnimalSleepingBox.description>
+
+  <Ogre_NanoTech_AnimalBed.label>家畜用ベッド (ナノ修復)</Ogre_NanoTech_AnimalBed.label>
+  <Ogre_NanoTech_AnimalBed.description>全ての家畜にぴったりな、家畜が寝るための柔らかなベッドです。衣服や武器のダメージをゆっくり修復します。</Ogre_NanoTech_AnimalBed.description>
+  <Blueprint_Ogre_NanoTech_AnimalBed.label>家畜用ベッド (ナノ修復)(設計)</Blueprint_Ogre_NanoTech_AnimalBed.label>
+  <Blueprint_Install_Ogre_NanoTech_AnimalBed.label>家畜用ベッド (ナノ修復)(移動先)</Blueprint_Install_Ogre_NanoTech_AnimalBed.label>
+  <Frame_Ogre_NanoTech_AnimalBed.label>家畜用ベッド (ナノ修復)(施工)</Frame_Ogre_NanoTech_AnimalBed.label>
+  <Frame_Ogre_NanoTech_AnimalBed.description>全ての家畜にぴったりな、家畜が寝るための柔らかなベッドです。衣服や武器のダメージをゆっくり修復します。</Frame_Ogre_NanoTech_AnimalBed.description>
 
 
 </LanguageData>
