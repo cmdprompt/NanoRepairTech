@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Verse;
 using RimWorld;
+using System.Reflection;
 
 namespace Ogre.NanoRepairTech
 {
@@ -100,6 +101,12 @@ namespace Ogre.NanoRepairTech
 								--powerApparelCount;
 							}
 						}
+					}
+
+					if (a.WornByCorpse && a.HitPoints >= a.MaxHitPoints)
+					{
+						FieldInfo info = a.GetType().GetField("wornByCorpseInt", BindingFlags.Instance | BindingFlags.NonPublic);
+						info.SetValue(a, false);
 					}
 				}
 
