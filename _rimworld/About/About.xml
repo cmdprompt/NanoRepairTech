@@ -24,8 +24,7 @@
   beds, and store things on shelves that are not powered/fueled)
 • When not actively repairing anything, nano units automatically go into low power 
   consumption mode.
-• Fuel is consumed at a relatively slow rate. 1 Fuel heals 4 HP. During my testing around 
-  1 fill up per year.
+• Fuel is consumed at a relatively slow rate. 1 Fuel heals 10 HP.
 • Fuel is initially created at the machining bench, and with further research at the 
   refinery from unwanted apparel (including tainted). 
 • Shelves repair at the same rate over 24 hours as beds do for 8 hours. i.e. if you sleep 
@@ -43,7 +42,7 @@
 
 • <color=#fffd43ff>Apparel Breakdown:</color>
   ◦ Break down apparel (tainted and/or non-tainted), at the biofuel refinery into base Nano
-    Tech chemicals. This break down process is very desctructive and the majority of useful
+    Tech chemicals. This break down process is very destructive and the majority of useful
     chemicals are destroyed.
 
 • <color=#fffd43ff>Nano Tech Refining:</color>
@@ -76,7 +75,6 @@
   end up with a lot of it via Apparel Breakdown research from dead raiders apparel.
 
 <size=13><color=#ffa500ff>GitHub:</color> <color=#fdfca2ff>https://github.com/cmdprompt/NanoRepairTech</color></size>
-<size=13><color=#ffa500ff>B18:</color> <color=#fdfca2ff>https://steamcommunity.com/sharedfiles/filedetails/?id=1242508171</color></size>
 ]]>
 		</description>
 </ModMetaData>
