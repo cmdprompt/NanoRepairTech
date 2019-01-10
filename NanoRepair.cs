@@ -20,14 +20,14 @@ namespace Ogre.NanoRepairTech
 		public StatModifier StatModApparel;
 		public StatModifier StatModWeapons;
 
-		internal readonly static float HP_APPAREL_PER_YEAR = 125f;
-		internal readonly static float HP_WEAPON_PER_YEAR = 80f;
+		internal readonly static float HP_APPAREL_PER_YEAR = 312f;
+		internal readonly static float HP_WEAPON_PER_YEAR = 200f;
 
 		private readonly static float LOW_TIER_APPAREL = 0.6f;
 		private readonly static float LOW_TIER_WEAPONS = 0.5f;
 		private readonly static float LOW_TIER_POWER = 0.75f;
 
-		private readonly static float FUEL_RATE = 0.25f;
+		private readonly static float FUEL_RATE = 0.1f;
 
 		private static ResearchProjectDef _researchDefWeapons = null;
 		private static ResearchProjectDef _researchDefAdvanced = null;
