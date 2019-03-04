@@ -12,6 +12,7 @@ namespace Ogre.NanoRepairTech
 		//private static readonly float RARE_TICKS_PER_YEAR = 1200000f;
 
 		private NanoRepair _nano;
+
 		public NanoBed()
 		{
 			_nano = new NanoRepair();

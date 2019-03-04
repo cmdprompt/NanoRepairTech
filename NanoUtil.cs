@@ -115,7 +115,6 @@ namespace Ogre.NanoRepairTech
 			nBed.uiIconScale = 0.9f;
 			nBed.techLevel = TechLevel.Industrial;
 			nBed.shortHash = 0;
-			nBed.blueprintDef = null;
 			
 			nBed.designationCategory = DefDatabase<DesignationCategoryDef>.AllDefsListForReading.Find(x => x.defName == "Ogre_NanoRepairTech_DesignationCategory");
 

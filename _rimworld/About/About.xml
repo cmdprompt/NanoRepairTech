@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-		<name>Nano Repair Tech</name>
-		<author>Ogre</author>
-		<targetVersion>1.0.2059</targetVersion>
-		<description><![CDATA[<size=30><color=#ffa500ff>             —  NANO REPAIR TECH  —</color></size>
+	<name>Nano Repair Tech</name>
+	<author>Ogre</author>
+	<supportedVersions>
+		<li>1.0</li>
+	</supportedVersions>
+	<description><![CDATA[<size=30><color=#ffa500ff>             —  NANO REPAIR TECH  —</color></size>
 
 <size=16><b>Allows construction of Nano Repair Units which slowly consume power and fuel to repair apparel and weapons.</b></size>
 
@@ -63,7 +65,7 @@
 <size=15><color=#1a8bffff>CHANGES FOR v1.0:</color></size>
 • The advanced tech no longer requires an entire new set of units to be made, the upgrades 
   are applied to the units after the research is complete. I did this because with an 
-  advanced teir, it felt like a waste of resources to build the lower teir. With this change 
+  advanced tier, it felt like a waste of resources to build the lower tier. With this change 
   the nano tech units are useful as soon as they are researched, and more research will make 
   them better without having to deconstruct/replace them.
 • Renamed (Bending Beds -> Nano Repair Tech)
@@ -76,5 +78,5 @@
 
 <size=13><color=#ffa500ff>GitHub:</color> <color=#fdfca2ff>https://github.com/cmdprompt/NanoRepairTech</color></size>
 ]]>
-		</description>
+	</description>
 </ModMetaData>

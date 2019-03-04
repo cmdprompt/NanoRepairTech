@@ -54,36 +54,36 @@ namespace Ogre.NanoRepairTech
 				.ToDictionary(x => x.defName, y => y);
 
 			List<string> logDefs = new List<string>();
-			//List<CompProperties_Facility> linkableBuildings = new List<CompProperties_Facility>();
-			//foreach (ThingDef def in new List<ThingDef>(DefDatabase<ThingDef>.AllDefsListForReading))
-			//{
-			//	CompProperties_Facility facility = def.GetCompProperties<CompProperties_Facility>();
-			//	if (facility != null && facility.linkableBuildings != null)
-			//	{
-					
-			//	}
-			//}
 
 			List<ThingDef> linkableBuildings = ThingDef.Named("Ogre_NanoTech_Bed").GetCompProperties<CompProperties_AffectedByFacilities>().linkableFacilities;
 			List<CompProperties_Facility> facilities = linkableBuildings
 				.Select(x => x.GetCompProperties<CompProperties_Facility>())
 				.Where(x => x != null)
 				.ToList();
+
+			ThingCategoryDef buildingCategory = DefDatabase<ThingCategoryDef>.AllDefsListForReading.Find(x => x.defName == "BuildingsFurniture");
+
 			foreach (KeyValuePair<string, Action<ThingDef>> kvp in _BEDS_TO_SUPPORT)
 			{
 				if (bedDefs.ContainsKey(kvp.Key))
 				{
 					ThingDef nanoBed = NanoUtil.CreateNanoBedDefFromSupportedBed(bedDefs[kvp.Key], kvp.Value, linkableBuildings, facilities);
 					DefDatabase<ThingDef>.Add(nanoBed);
+					buildingCategory.childThingDefs.Add(nanoBed); // so beds are in stockpiles filters
 					logDefs.Add(kvp.Key);
 				}
 			}
 
 			Verse.Log.Message("Nano Repair Tech Added Defs: { " + string.Join(", ", logDefs.ToArray()) + " }");
-			
+
+			// defs show up where they are 
+			// supposed to in the game menus?
 			DefDatabase<DesignationCategoryDef>.AllDefsListForReading.Find(x => x.defName == "Ogre_NanoRepairTech_DesignationCategory").ResolveReferences();
-			
+
+			// pawns will not auto seek out
+			// the beds unless the 
+			// RestUtilty is reset
+			RestUtility.Reset();
 		}
-		
 	}
 }
