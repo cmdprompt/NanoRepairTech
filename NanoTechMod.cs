@@ -5,39 +5,35 @@ using System.Linq;
 using RimWorld;
 using System.Reflection;
 
+
 namespace Ogre.NanoRepairTech
 {
 	public class NanoTechMod : Verse.Mod
 	{
-		//private readonly static string[] _DEFS_TO_SUPPORT = new string[]
-		//{
-		//	// RIMkia
-		//	"KRUDNEPPSingle",
-		//	"SLABNEPPDouble",
-		//	"SNOREGGSingle",
-		//	"SNOREGGDouble"
-		//};
-
-		private readonly static List<KeyValuePair<string, Action<ThingDef>>> _BEDS_TO_SUPPORT = new List<KeyValuePair<string, Action<ThingDef>>>()
+		private readonly static List<SupportedBed> _BEDS_TO_SUPPORT = new List<SupportedBed>()
 		{
 			// RIMkia
-			{ Create("KRUDNEPPSingle", null) },
-			{ Create("SLABNEPPDouble", null) },
-			{ Create("SNOREGGSingle", null) },
-			{ Create("SNOREGGDouble", null) },
-			{ Create("PETSNORR", null) },
+			new SupportedBed("RIMkia", "KRUDNEPPSingle"),
+			new SupportedBed("RIMkia", "SLABNEPPDouble"),
+			new SupportedBed("RIMkia", "SNOREGGSingle"),
+			new SupportedBed("RIMkia", "SNOREGGDouble"),
+			new SupportedBed("RIMkia", "PETSNORR"),
 
 			// Gloomy Furniture
-			{ Create("RGK_bedSingle", null) },
-			{ Create("RGK_bedSingleB", null) },
-			{ Create("RGK_bedDouble", null) },
-			{ Create("RGK_bedDoubleB", null) }
-		};
+			new SupportedBed("Gloomy Furniture", "RGK_bedSingle"),
+			new SupportedBed("Gloomy Furniture", "RGK_bedSingleB"),
+			new SupportedBed("Gloomy Furniture", "RGK_bedDouble"),
+			new SupportedBed("Gloomy Furniture", "RGK_bedDoubleB"),
 
-		internal static KeyValuePair<string, Action<ThingDef>> Create(string defName, Action<ThingDef> fnProcess)
-		{
-			return new KeyValuePair<string, Action<ThingDef>>(defName, fnProcess);
-		}
+			// Vanilla Furniture Expanded
+			new SupportedBed("Vanilla Furniture Expanded", "Bed_Simple"),
+			new SupportedBed("Vanilla Furniture Expanded", "Bed_Ergonomic"),
+			new SupportedBed("Vanilla Furniture Expanded", "Bed_DoubleErgonomic"),
+			new SupportedBed("Vanilla Furniture Expanded", "Bed_Kingsize"),
+
+			// Vanilla Furniture Expanded - Medical Module
+			new SupportedBed("Vanilla Furniture Expanded - Medical Module", "Bed_OperatingTable", true)
+		};
 
 		public NanoTechMod(ModContentPack content) : base(content)
 		{
@@ -53,7 +49,7 @@ namespace Ogre.NanoRepairTech
 				.Where(d => !d.defName.StartsWith("Ogre_NanoTech") && bed.IsAssignableFrom(d.thingClass))
 				.ToDictionary(x => x.defName, y => y);
 
-			List<string> logDefs = new List<string>();
+			HashSet<string> modSupport = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
 
 			List<ThingDef> linkableBuildings = ThingDef.Named("Ogre_NanoTech_Bed").GetCompProperties<CompProperties_AffectedByFacilities>().linkableFacilities;
 			List<CompProperties_Facility> facilities = linkableBuildings
@@ -61,20 +57,32 @@ namespace Ogre.NanoRepairTech
 				.Where(x => x != null)
 				.ToList();
 
+			List<ThingDef> linkableHospitalOnly = ThingDef.Named("Ogre_NanoTech_HospitalBed").GetCompProperties<CompProperties_AffectedByFacilities>().linkableFacilities;
+			List<CompProperties_Facility> hospitalOnlyFacilities = linkableHospitalOnly
+				.Select(x => x.GetCompProperties<CompProperties_Facility>())
+				.Where(x => x != null)
+				.ToList();
+
 			ThingCategoryDef buildingCategory = DefDatabase<ThingCategoryDef>.AllDefsListForReading.Find(x => x.defName == "BuildingsFurniture");
 
-			foreach (KeyValuePair<string, Action<ThingDef>> kvp in _BEDS_TO_SUPPORT)
+			foreach (SupportedBed b in _BEDS_TO_SUPPORT)
 			{
-				if (bedDefs.ContainsKey(kvp.Key))
+				if (bedDefs.ContainsKey(b.DefName))
 				{
-					ThingDef nanoBed = NanoUtil.CreateNanoBedDefFromSupportedBed(bedDefs[kvp.Key], kvp.Value, linkableBuildings, facilities);
+					ThingDef nanoBed = NanoUtil.CreateNanoBedDefFromSupportedBed(
+						bed: bedDefs[b.DefName],
+						fnAdditionalProcessing: b.FnPostProcess,
+						linkableBuildings: b.UseHospitalLinkablesOnly ? linkableHospitalOnly : linkableBuildings,
+						facilities: b.UseHospitalLinkablesOnly ? hospitalOnlyFacilities : facilities
+					);
+
 					DefDatabase<ThingDef>.Add(nanoBed);
-					buildingCategory.childThingDefs.Add(nanoBed); // so beds are in stockpiles filters
-					logDefs.Add(kvp.Key);
+					buildingCategory.childThingDefs.Add(nanoBed); // so beds are in stockpile filters
+					modSupport.Add(b.ModName);
 				}
 			}
 
-			Verse.Log.Message("Nano Repair Tech Added Defs: { " + string.Join(", ", logDefs.ToArray()) + " }");
+			Verse.Log.Message("Nano Repair Tech Added Support: [ " + string.Join(", ", modSupport.OrderBy(x => x).ToArray()) + " ]");
 
 			// defs show up where they are 
 			// supposed to in the game menus?

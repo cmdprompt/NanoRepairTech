@@ -39,6 +39,7 @@
   <ItemGroup>
     <Compile Include="BreakdownWorker.cs" />
     <Compile Include="Models\INano.cs" />
+    <Compile Include="Models\SupportedBed.cs" />
     <Compile Include="Nanos\NanoBed.cs" />
     <Compile Include="NanoRepair.cs" />
     <Compile Include="Nanos\NanoShelf.cs" />

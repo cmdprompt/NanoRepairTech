@@ -93,4 +93,39 @@
 			</li>
 		</operations>
 	</Operation>
+
+	<!-- Vanilla Furniture Expanded 1718190143 -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName = "Table_RoyalDresser"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Ogre_NanoTech_Bed" or defName = "Ogre_NanoTech_DoubleBed" or defName = "Ogre_NanoTech_RoyalBed" or defName = "Ogre_NanoTech_HospitalBed"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+				<value>
+					<li>Table_RoyalDresser</li>
+					<li>Table_RoyalEndTable</li>
+					<li>Table_Wardrobe</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- Vanilla Furniture Expanded - Medical Module 1718191613 -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName = "Facility_VitalsCentre"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Ogre_NanoTech_HospitalBed"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+				<value>
+					<li>Facility_VitalsCentre</li>
+					<li>Facility_IVDrip</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
 </Patch>
