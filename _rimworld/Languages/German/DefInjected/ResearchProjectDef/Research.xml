@@ -9,7 +9,7 @@
   <!-- EN: Apparel Breakdown -->
   <Ogre_NanoTech_Breakdown.label>Kleidung auflösen</Ogre_NanoTech_Breakdown.label>
   <!-- EN: Break down apparel, tainted and/or non-tainted, at the biofuel refinery into a multitude of chemicals which can be further refined into Nano-Tech fuel with further research. This process is very destructive and the majority of useful chemicals obtained from the apparel is lost. -->
-  <Ogre_NanoTech_Breakdown.description>Löse saubere oder verunreinigte Kleidung in der Biotreibstoff Raffinerie in eine Mischung aus Chemikalien auf. </Ogre_NanoTech_Breakdown.description>
+  <Ogre_NanoTech_Breakdown.description>Löse saubere oder verunreinigte Kleidung in der Biotreibstoff Raffinerie in eine Mischung aus Chemikalien auf.</Ogre_NanoTech_Breakdown.description>
 
   <!-- EN: Nano-Tech Refining -->
   <Ogre_NanoTech_Refine.label>Nano-Tech Raffinerie</Ogre_NanoTech_Refine.label>
