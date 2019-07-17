@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: Nano Repair Tech -->
+  <Ogre_NanoTech.label>Nano Repair Tech</Ogre_NanoTech.label>
+  <!-- EN: Allows Nano-Tech repair unit construction: Beds and Storage Shelfs. Beds repair equipped apparel while you sleep in them, shelves repair apparel stored on them. All units come with Nano-Tech nanites which need to be powered and fueled. Nano-Tech fuel can be created at the machining bench and with additional research at the biofuel refinery. -->
+  <Ogre_NanoTech.description>Baue Nano-Tech Reperatureinheiten: Betten und Ablagefächern. Betten reparieren ausgerüstete Kleidung, während du schläfst. Ablagefächer reparieren darin abgelegte Gegenstände. Alle Einheiten enthalten Nano-Tech Naniten, die Energie und Treibstoff brauchen. Nano-Tech Treibstoff kann an der Mechanik Werkbank hergestellt werden. Mit weiterer Forschung auch in der Biotreibstoff Raffinerie.</Ogre_NanoTech.description>
+
+  <!-- EN: Apparel Breakdown -->
+  <Ogre_NanoTech_Breakdown.label>Kleidung auflösen</Ogre_NanoTech_Breakdown.label>
+  <!-- EN: Break down apparel, tainted and/or non-tainted, at the biofuel refinery into a multitude of chemicals which can be further refined into Nano-Tech fuel with further research. This process is very destructive and the majority of useful chemicals obtained from the apparel is lost. -->
+  <Ogre_NanoTech_Breakdown.description>Löse saubere oder verunreinigte Kleidung in der Biotreibstoff Raffinerie in eine Mischung aus Chemikalien auf. </Ogre_NanoTech_Breakdown.description>
+
+  <!-- EN: Nano-Tech Refining -->
+  <Ogre_NanoTech_Refine.label>Nano-Tech Raffinerie</Ogre_NanoTech_Refine.label>
+  <!-- EN: Further refine nano tech fuel base with textile/leather into nano tech fuel. This process requires chemfuel as a catalyst. -->
+  <Ogre_NanoTech_Refine.description>Raffinere Nano-Tech Treibstoffgrundlage mit Textilien oder Leder zu Nano-Tech Treibstoff. Dieser Prozess braucht Kraftstoff als einen Katalysator.</Ogre_NanoTech_Refine.description>
+
+  <!-- EN: Nanite Extender Arm -->
+  <Ogre_NanoTech_Weapons.label>Naniten Armerweiterung</Ogre_NanoTech_Weapons.label>
+  <!-- EN: Alter the nanites used in nano tech units to incorporate an extender arm. This modification, with an increased power requirement, makes it possible to repair weaponry in addition to apparel. -->
+  <Ogre_NanoTech_Weapons.description>Fügt den Naniten in Nano-Tech Einheiten eine Armerweiterung hinzu. Diese Veränderung kommt mit einer erhöhtem Stromaufnahme, ermöglichst es aber zusätzlich zur Kleidung auch noch Waffen zu reparieren.</Ogre_NanoTech_Weapons.description>
+
+  <!-- EN: Power Shielding -->
+  <Ogre_NanoTech_Advanced.label>Leistungsabschirmung</Ogre_NanoTech_Advanced.label>
+  <!-- EN: Further alter the nanites used in nano tech units to greatly increase their electric shielding. This lets the nanites operate at higher wattages, increasing their repair rate for apparel and greatly increasing their rate for weapons. -->
+  <Ogre_NanoTech_Advanced.description>Fügt den Naniten in Nano-Tech Einheiten eine Leistungsabschirmung hinzu. Die Naniten können damit höhere Leistungen erbringen, was ihre Reperaturrate für Kleidung und in großem Maße für Waffen erhöht.</Ogre_NanoTech_Advanced.description>
+
+
+</LanguageData>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <NanoTech.ModName>Nano Repair Tech</NanoTech.ModName>
+
+  <!-- added to the defname for other mods items -->
+  <!-- should stay the same regardless of language? -->
+  <NanoTech.ModName.Short>nano tech</NanoTech.ModName.Short>
+
+  <!-- Added to existing descriptions for other mods furniture that is supported -->
+  <!-- EN: Slowly repairs damage to equipped apparel/weaponry. -->
+  <NanoTech.Description.Short>Ausgerüstete Kleidung und Waffen werden langsam repariert.</NanoTech.Description.Short>
+
+</LanguageData>

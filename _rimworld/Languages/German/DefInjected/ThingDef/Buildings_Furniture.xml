@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Just Regular 1x1 shelf (same gFX as nano 1x1 shelf) -->
+
+  <!-- EN: shelf (1x1) -->
+  <Ogre_1x1_Shelf.label>Regal (1x1)</Ogre_1x1_Shelf.label>
+  <!-- EN: A shelf for storing miscellaneous items. Items stored in this will not deteriorate, even if outside. -->
+  <Ogre_1x1_Shelf.description>Hier gelagerte Ausrüstung verrottet nicht, auch nicht im Freien.</Ogre_1x1_Shelf.description>
+  <!-- EN: shelf (1x1) (blueprint) -->
+  <Blueprint_Ogre_1x1_Shelf.label>Regal (1x1)(Entwurf)</Blueprint_Ogre_1x1_Shelf.label>
+  <!-- EN: shelf (1x1) (blueprint) -->
+  <Blueprint_Install_Ogre_1x1_Shelf.label>Regal (1x1)(Entwurf)</Blueprint_Install_Ogre_1x1_Shelf.label>
+  <!-- EN: shelf (1x1) (building) -->
+  <Frame_Ogre_1x1_Shelf.label>Regal (1x1)(wird gebaut)</Frame_Ogre_1x1_Shelf.label>
+  <!-- EN: A shelf for storing miscellaneous items. Items stored in this will not deteriorate, even if outside. -->
+  <Frame_Ogre_1x1_Shelf.description>Hier gelagerte Ausrüstung verrottet nicht, auch nicht im Freien.</Frame_Ogre_1x1_Shelf.description>
+
+
+  <!-- Beds -->
+
+  <!-- EN: nano tech bed -->
+  <Ogre_NanoTech_Bed.label>Nano-Tech Bett</Ogre_NanoTech_Bed.label>
+  <!-- EN: A cozy mattress and sheets on a frame for resting. Slowly repairs damage to equipped apparel/weaponry. -->
+  <Ogre_NanoTech_Bed.description>Eine gemütliche Matratze mit Bettwäsche auf einem Rahmen. Ein guter Ort zum Ausruhen. Repariert langsam jeglichen Schaden an ausgerüsteter Bekleidung und Waffen.</Ogre_NanoTech_Bed.description>
+  <!-- EN: nano tech bed (blueprint) -->
+  <Blueprint_Ogre_NanoTech_Bed.label>Nano-Tech Bett</Blueprint_Ogre_NanoTech_Bed.label>
+  <!-- EN: nano tech bed (blueprint) -->
+  <Blueprint_Install_Ogre_NanoTech_Bed.label>Nano-Tech Bett</Blueprint_Install_Ogre_NanoTech_Bed.label>
+  <!-- EN: nano tech bed (building) -->
+  <Frame_Ogre_NanoTech_Bed.label>Nano-Tech Bett</Frame_Ogre_NanoTech_Bed.label>
+  <!-- EN: A cozy mattress and sheets on a frame for resting. Slowly repairs damage to equipped apparel/weaponry. -->
+  <Frame_Ogre_NanoTech_Bed.description>Eine gemütliche Matratze mit Bettwäsche auf einem Rahmen. Ein guter Ort zum Ausruhen. Repariert langsam jeglichen Schaden an Bekleidung und Waffen.</Frame_Ogre_NanoTech_Bed.description>
+
+  <!-- EN: nano tech double bed -->
+  <Ogre_NanoTech_DoubleBed.label>Nano-Tech Doppelbett</Ogre_NanoTech_DoubleBed.label>
+  <!-- EN: A simple double-wide bed that fits two people. Slowly repairs damage to equipped apparel/weaponry. -->
+  <Ogre_NanoTech_DoubleBed.description>Ein einfaches Doppelbett mit genug Platz für Zwei. Repariert langsam jeglichen Schaden an ausgerüsteter Bekleidung und Waffen.</Ogre_NanoTech_DoubleBed.description>
+  <!-- EN: nano tech double bed (blueprint) -->
+  <Blueprint_Ogre_NanoTech_DoubleBed.label>Nano-Tech Doppelbett</Blueprint_Ogre_NanoTech_DoubleBed.label>
+  <!-- EN: nano tech double bed (blueprint) -->
+  <Blueprint_Install_Ogre_NanoTech_DoubleBed.label>Nano-Tech Doppelbett</Blueprint_Install_Ogre_NanoTech_DoubleBed.label>
+  <!-- EN: nano tech double bed (building) -->
+  <Frame_Ogre_NanoTech_DoubleBed.label>Nano-Tech Doppelbett</Frame_Ogre_NanoTech_DoubleBed.label>
+  <!-- EN: A simple double-wide bed that fits two people. Slowly repairs damage to equipped apparel/weaponry. -->
+  <Frame_Ogre_NanoTech_DoubleBed.description>Ein einfaches Doppelbett mit genug Platz für Zwei. Repariert langsam jeglichen Schaden an ausgerüsteter Bekleidung und Waffen.</Frame_Ogre_NanoTech_DoubleBed.description>
+
+  <!-- EN: nano tech royal bed -->
+  <Ogre_NanoTech_RoyalBed.label>Nano-Tech Königliches Bett</Ogre_NanoTech_RoyalBed.label>
+  <!-- EN: A luxurious gold-inlaid bed fit for the highborn. Very comfy and beautiful. Fits two. Slowly repairs damage to equipped apparel/weaponry. -->
+  <Ogre_NanoTech_RoyalBed.description>Ein luxuriöses, mit Gold verziertes Bett, das gerade ausreichend für die Person von Adel ist. Sehr schön und bequem, schon fast ein eigenes Kunstwerk. Mit ausreichend Platz für zwei. Repariert langsam jeglichen Schaden an ausgerüsteter Bekleidung und Waffen.</Ogre_NanoTech_RoyalBed.description>
+  <!-- EN: nano tech royal bed (blueprint) -->
+  <Blueprint_Ogre_NanoTech_RoyalBed.label>Nano-Tech Königliches Bett</Blueprint_Ogre_NanoTech_RoyalBed.label>
+  <!-- EN: nano tech royal bed (blueprint) -->
+  <Blueprint_Install_Ogre_NanoTech_RoyalBed.label>Nano-Tech Königliches Bett</Blueprint_Install_Ogre_NanoTech_RoyalBed.label>
+  <!-- EN: nano tech royal bed (building) -->
+  <Frame_Ogre_NanoTech_RoyalBed.label>Nano-Tech Königliches Bett</Frame_Ogre_NanoTech_RoyalBed.label>
+  <!-- EN: A luxurious gold-inlaid bed fit for the highborn. Very comfy and beautiful. Fits two. Slowly repairs damage to equipped apparel/weaponry. -->
+  <Frame_Ogre_NanoTech_RoyalBed.description>Ein luxuriöses, mit Gold verziertes Bett, das gerade ausreichend für die Person von Adel ist. Sehr schön und bequem, schon fast ein eigenes Kunstwerk. Mit ausreichend Platz für zwei. Repariert langsam jeglichen Schaden an ausgerüsteter Bekleidung und Waffen.</Frame_Ogre_NanoTech_RoyalBed.description>
+
+  <!-- EN: nano tech hospital bed -->
+  <Ogre_NanoTech_HospitalBed.label>Nano-Tech Krankenbett</Ogre_NanoTech_HospitalBed.label>
+  <!-- EN: A bed specially designed for injured people. Improves chance of successful medical work. Slowly repairs damage to equipped apparel/weaponry. -->
+  <Ogre_NanoTech_HospitalBed.description>Ein Bett, das speziell für die Krankenhäuser entworfen wurde. Es verbessert das Ergebnis von medizinische Behandlungen sowie Operationen gegenüber normalen Betten. Repariert langsam jeglichen Schaden an ausgerüsteter Bekleidung und Waffen.</Ogre_NanoTech_HospitalBed.description>
+  <!-- EN: nano tech hospital bed (blueprint) -->
+  <Blueprint_Ogre_NanoTech_HospitalBed.label>Nano-Tech Krankenbett</Blueprint_Ogre_NanoTech_HospitalBed.label>
+  <!-- EN: nano tech hospital bed (blueprint) -->
+  <Blueprint_Install_Ogre_NanoTech_HospitalBed.label>Nano-Tech Krankenbett</Blueprint_Install_Ogre_NanoTech_HospitalBed.label>
+  <!-- EN: nano tech hospital bed (building) -->
+  <Frame_Ogre_NanoTech_HospitalBed.label>Nano-Tech Krankenbett</Frame_Ogre_NanoTech_HospitalBed.label>
+  <!-- EN: A bed specially designed for injured people. Improves chance of successful medical work. Slowly repairs damage to equipped apparel/weaponry. -->
+  <Frame_Ogre_NanoTech_HospitalBed.description>Ein Bett, das speziell für die Krankenhäuser entworfen wurde. Es verbessert das Ergebnis von medizinische Behandlungen sowie Operationen gegenüber normalen Betten. Repariert langsam jeglichen Schaden an ausgerüsteter Bekleidung und Waffen.</Frame_Ogre_NanoTech_HospitalBed.description>
+
+
+  <!-- Shelves -->
+
+  <!-- EN: nano tech shelf (2x1) -->
+  <Ogre_NanoTech_2x1_Shelf.label>Nano-Tech Regal</Ogre_NanoTech_2x1_Shelf.label>
+  <!-- EN: A shelf for storing miscellaneous items. Items stored in this will not deteriorate, even if outside. If used to store apparel/weaponry they will slowly be repaired. -->
+  <Ogre_NanoTech_2x1_Shelf.description>Hier gelagerte Ausrüstung verrottet nicht, auch nicht im Freien. Repariert langsam jeglichen Schaden an gelagerter Bekleidung und Waffen.</Ogre_NanoTech_2x1_Shelf.description>
+  <!-- EN: nano tech shelf (2x1) (blueprint) -->
+  <Blueprint_Ogre_NanoTech_2x1_Shelf.label>Nano-Tech Regal</Blueprint_Ogre_NanoTech_2x1_Shelf.label>
+  <!-- EN: nano tech shelf (2x1) (blueprint) -->
+  <Blueprint_Install_Ogre_NanoTech_2x1_Shelf.label>Nano-Tech Regal</Blueprint_Install_Ogre_NanoTech_2x1_Shelf.label>
+  <!-- EN: nano tech shelf (2x1) (building) -->
+  <Frame_Ogre_NanoTech_2x1_Shelf.label>Nano-Tech Regal</Frame_Ogre_NanoTech_2x1_Shelf.label>
+  <!-- EN: A shelf for storing miscellaneous items. Items stored in this will not deteriorate, even if outside. If used to store apparel/weaponry they will slowly be repaired. -->
+  <Frame_Ogre_NanoTech_2x1_Shelf.description>Hier gelagerte Ausrüstung verrottet nicht, auch nicht im Freien. Repariert langsam jeglichen Schaden an gelagerter Bekleidung und Waffen.</Frame_Ogre_NanoTech_2x1_Shelf.description>
+
+  <!-- EN: nano tech shelf (1x1) -->
+  <Ogre_NanoTech_1x1_Shelf.label>Nano-Tech Regal (1x1)</Ogre_NanoTech_1x1_Shelf.label>
+  <!-- EN: A shelf for storing miscellaneous items. Items stored in this will not deteriorate, even if outside. If used to store apparel/weaponry they will slowly be repaired. -->
+  <Ogre_NanoTech_1x1_Shelf.description>Hier gelagerte Ausrüstung verrottet nicht, auch nicht im Freien. Repariert langsam jeglichen Schaden an gelagerter Bekleidung und Waffen.</Ogre_NanoTech_1x1_Shelf.description>
+  <!-- EN: nano tech shelf (1x1) (blueprint) -->
+  <Blueprint_Ogre_NanoTech_1x1_Shelf.label>Nano-Tech Regal (1x1)</Blueprint_Ogre_NanoTech_1x1_Shelf.label>
+  <!-- EN: nano tech shelf (1x1) (blueprint) -->
+  <Blueprint_Install_Ogre_NanoTech_1x1_Shelf.label>Nano-Tech Regal (1x1)</Blueprint_Install_Ogre_NanoTech_1x1_Shelf.label>
+  <!-- EN: nano tech shelf (1x1) (building) -->
+  <Frame_Ogre_NanoTech_1x1_Shelf.label>Nano-Tech Regal (1x1)</Frame_Ogre_NanoTech_1x1_Shelf.label>
+  <!-- EN: A shelf for storing miscellaneous items. Items stored in this will not deteriorate, even if outside. If used to store apparel/weaponry they will slowly be repaired. -->
+  <Frame_Ogre_NanoTech_1x1_Shelf.description>Hier gelagerte Ausrüstung verrottet nicht, auch nicht im Freien. Repariert langsam jeglichen Schaden an gelagerter Bekleidung und Waffen.</Frame_Ogre_NanoTech_1x1_Shelf.description>
+
+
+  <!-- Animal Beds -->
+
+  <!-- EN: nano tech animal sleeping box -->
+  <Ogre_NanoTech_AnimalSleepingBox.label>Nano-Tech Schlafkiste (Tier)</Ogre_NanoTech_AnimalSleepingBox.label>
+  <!-- EN: A small box for animals to sleep in. Fits smaller animals like chickens, cats, or small dogs. Slowly repairs damage to equipped apparel/weaponry. -->
+  <Ogre_NanoTech_AnimalSleepingBox.description>Eine kleine Kiste, in der Tiere schlafen können. Passend für kleinere Tiere, wie Hühner, Katzen oder kleine Hunde. Repariert langsam jeglichen Schaden an ausgerüsteter Bekleidung und Waffen.</Ogre_NanoTech_AnimalSleepingBox.description>
+  <!-- EN: nano tech animal sleeping box (blueprint) -->
+  <Blueprint_Ogre_NanoTech_AnimalSleepingBox.label>Nano-Tech Schlafkiste (Tier)</Blueprint_Ogre_NanoTech_AnimalSleepingBox.label>
+  <!-- EN: nano tech animal sleeping box (blueprint) -->
+  <Blueprint_Install_Ogre_NanoTech_AnimalSleepingBox.label>Nano-Tech Schlafkiste (Tier)</Blueprint_Install_Ogre_NanoTech_AnimalSleepingBox.label>
+  <!-- EN: nano tech animal sleeping box (building) -->
+  <Frame_Ogre_NanoTech_AnimalSleepingBox.label>Nano-Tech Schlafkiste (Tier)</Frame_Ogre_NanoTech_AnimalSleepingBox.label>
+  <!-- EN: A small box for animals to sleep in. Fits smaller animals like chickens, cats, or small dogs. Slowly repairs damage to equipped apparel/weaponry. -->
+  <Frame_Ogre_NanoTech_AnimalSleepingBox.description>Eine kleine Kiste, in der Tiere schlafen können. Passend für kleinere Tiere, wie Hühner, Katzen oder kleine Hunde. Repariert langsam jeglichen Schaden an ausgerüsteter Bekleidung und Waffen.</Frame_Ogre_NanoTech_AnimalSleepingBox.description>
+
+  <!-- EN: nano tech animal bed -->
+  <Ogre_NanoTech_AnimalBed.label>Nano-Tech Bett (Tier)</Ogre_NanoTech_AnimalBed.label>
+  <!-- EN: A soft bed for animals to sleep on. Fits any animal. Slowly repairs damage to equipped apparel/weaponry. -->
+  <Ogre_NanoTech_AnimalBed.description>Ein weiches Bett auf dem Tiere schlafen können. Passend für alle Tierarten. Repariert langsam jeglichen Schaden an ausgerüsteter Bekleidung und Waffen.</Ogre_NanoTech_AnimalBed.description>
+  <!-- EN: nano tech animal bed (blueprint) -->
+  <Blueprint_Ogre_NanoTech_AnimalBed.label>Nano-Tech Bett (Tier)</Blueprint_Ogre_NanoTech_AnimalBed.label>
+  <!-- EN: nano tech animal bed (blueprint) -->
+  <Blueprint_Install_Ogre_NanoTech_AnimalBed.label>Nano-Tech Bett (Tier)</Blueprint_Install_Ogre_NanoTech_AnimalBed.label>
+  <!-- EN: nano tech animal bed (building) -->
+  <Frame_Ogre_NanoTech_AnimalBed.label>Nano-Tech Bett (Tier)</Frame_Ogre_NanoTech_AnimalBed.label>
+  <!-- EN: A soft bed for animals to sleep on. Fits any animal. Slowly repairs damage to equipped apparel/weaponry. -->
+  <Frame_Ogre_NanoTech_AnimalBed.description>Ein weiches Bett auf dem Tiere schlafen können. Passend für alle Tierarten. Repariert langsam jeglichen Schaden an ausgerüsteter Bekleidung und Waffen.</Frame_Ogre_NanoTech_AnimalBed.description>
+
+
+</LanguageData>

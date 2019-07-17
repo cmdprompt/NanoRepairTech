@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: make Nano-Tech fuel -->
+  <Ogre_Make_NaniteFuel.label>Stelle Nano-Tech Treibstoff her</Ogre_Make_NaniteFuel.label>
+  <!-- EN: Combine a variety of textiles/leathers with steel to create Nano-Tech fuel. This fuel is used in the Nano-Tech repair units by the nanites to repair/replace damages in apparel and weaponry. This process requires chemfuel as a catalyst. -->
+  <Ogre_Make_NaniteFuel.description>Kombiniere beliebige Textilien oder Leder mit Stahl, um Nano-Tech Treibstoff herzustellen. Der Treibstoff wird von Naniten in Nano-Tech Reperatureinheiten verwendet, um Schäden in Kleidung und Waffen zu reparieren. Dieser Prozess braucht Kraftstoff als einen Katalysator.
+  </Ogre_Make_NaniteFuel.description>
+  <!-- EN: Creating Nano-Tech fuel. -->
+  <Ogre_Make_NaniteFuel.jobString>Stelle Nano-Tech Treibstoff her</Ogre_Make_NaniteFuel.jobString>
+
+  <!-- EN: breakdown apparel -->
+  <Ogre_Make_NanoTechFuelBase.label>Löse Kleidung auf</Ogre_Make_NanoTechFuelBase.label>
+  <!-- EN: Breakdown apparel into chemicals useful to Nano-Tech units. The amount of chemicals extracted will be related to how damaged the apparel is, and what tech level it is. i.e. You will be able to extract more chemicals from PowerArmor than a Tribal Mask. -->
+  <Ogre_Make_NanoTechFuelBase.description>Löse Kleidung in Chemikalien auf, die zu Nano-Tech Treibstoff raffiniert werden können. Die Menge an Chemikalien, hängt vom Zustand, sowie vom Technologielevel des Kleidungsstückes ab. Z.B. kannst du aus einer Energierüstung mehr Chemikalien extrahieren als aus einem Stammeskopftuch</Ogre_Make_NanoTechFuelBase.description>
+  <!-- EN: Breaking down apparel. -->
+  <Ogre_Make_NanoTechFuelBase.jobString>Kleidung auflösen</Ogre_Make_NanoTechFuelBase.jobString>
+
+  <!-- EN: refine nano tech fuel -->
+  <Ogre_Make_NanoTechFuelFromBase.label>Raffiniere Nano-Tech Treibstoff</Ogre_Make_NanoTechFuelFromBase.label>
+  <!-- EN: Refine nano tech fuel base and a small amount of textiles/leather into nano tech fuel. This process requires chemfuel as a catalyst. -->
+  <Ogre_Make_NanoTechFuelFromBase.description>Raffiniere die Nano-Tech Treibstoffgrundlage und eine kleine Menge an Textilien oder Leder zu Nano-Tech Treibstoff. Dieser Prozess braucht Kraftstoff als einen Katalysator.</Ogre_Make_NanoTechFuelFromBase.description>
+  <!-- EN: Refining nanite fuel. -->
+  <Ogre_Make_NanoTechFuelFromBase.jobString>Raffiniere Nano-Tech Treibstoff </Ogre_Make_NanoTechFuelFromBase.jobString>
+
+
+</LanguageData>
