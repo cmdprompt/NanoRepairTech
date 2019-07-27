@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: nano tech fuel -->
+  <Ogre_NanoTechFuel.label>Nano-Tech Treibstoff</Ogre_NanoTechFuel.label>
+  <!-- EN: An amalgam of steel, textiles/leather and chemfuel. Nanites can use this material to repair weapons and apparel. -->
+  <Ogre_NanoTechFuel.description>Eine Mischung aus Stahl, Textilien oder Leder und Kraftstoff. Naniten brauchen diesen Treibstoff um Waffen und Kleidung zu reparieren.</Ogre_NanoTechFuel.description>
+
+  <!-- EN: nano tech fuel base -->
+  <Ogre_NanoTechFuelBase.label>Nano-Tech Treibstoffgrundlage</Ogre_NanoTechFuelBase.label>
+  <!-- EN: A collection of extremely viscous chemicals refined from apparel. Can be refined to create nanite fuel. -->
+  <Ogre_NanoTechFuelBase.description>Diverse gefährliche Chemikalien, gewonnen aus aufgelöster Kleidung. Kann zu Nano-Tech Treibstoff raffiniert werden.</Ogre_NanoTechFuelBase.description>
+
+
+</LanguageData>

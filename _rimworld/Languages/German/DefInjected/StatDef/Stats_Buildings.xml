@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Apparel -->
+
+  <!-- EN: Nano-Tech Apparel Repair -->
+  <Ogre_NanoApparelRate.label>Nano-Tech Kleidungsreparatur</Ogre_NanoApparelRate.label>
+  <!-- EN: Speed at which the Nano-Tech unit repairs apparel. -->
+  <Ogre_NanoApparelRate.description>Die Geschwindigkeit, mit der Kleidung repariert wird.</Ogre_NanoApparelRate.description>
+  <Ogre_NanoApparelRate.formatString>{0}%</Ogre_NanoApparelRate.formatString>
+
+
+  <!-- Weapons -->
+
+  <!-- EN: Nano-Tech Weapons Repair -->
+  <Ogre_NanoWeaponsRate.label>Nano-Tech Waffenreperatur</Ogre_NanoWeaponsRate.label>
+  <!-- EN: Speed at which the Nano-Tech unit repairs weapons. -->
+  <Ogre_NanoWeaponsRate.description>Die Geschwindigkeit, mit der Waffen repariert werden.</Ogre_NanoWeaponsRate.description>
+  <Ogre_NanoWeaponsRate.formatString>{0}%</Ogre_NanoWeaponsRate.formatString>
+
+
+</LanguageData>
