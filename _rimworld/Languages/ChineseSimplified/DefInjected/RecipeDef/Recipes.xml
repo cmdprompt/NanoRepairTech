@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Ogre_Make_NaniteFuel.label>制作纳米修复材料</Ogre_Make_NaniteFuel.label>
+  <Ogre_Make_NaniteFuel.description>将多种纺织品/皮革与钢铁融合来制成纳米修复材料，这种材料被用于纳米修复单元，以修复服装和武器中的损坏部分，此过程需要化合材料作为催化剂。</Ogre_Make_NaniteFuel.description>
+  <Ogre_Make_NaniteFuel.jobString>纳米修复材料制造中。</Ogre_Make_NaniteFuel.jobString>
+
+  <Ogre_Make_NanoTechFuelBase.label>分解服装获取基底</Ogre_Make_NanoTechFuelBase.label>
+  <Ogre_Make_NanoTechFuelBase.description>将服装分解成纳米修复材料基底，分解得到的量与服装的破损度和科技水平有关，即比起部落面具，您能从动力装甲中提取到更多纳米修复材料基底</Ogre_Make_NanoTechFuelBase.description>
+  <Ogre_Make_NanoTechFuelBase.jobString>服装分解中。</Ogre_Make_NanoTechFuelBase.jobString>
+
+  <Ogre_Make_NanoTechFuelFromBase.label>提炼纳米修复材料</Ogre_Make_NanoTechFuelFromBase.label>
+  <Ogre_Make_NanoTechFuelFromBase.description>将纳米修复材料基底和少量纺织品/皮革混合提炼成纳米修复材料。 该过程需要化合材料作为催化剂。</Ogre_Make_NanoTechFuelFromBase.description>
+  <Ogre_Make_NanoTechFuelFromBase.jobString>纳米修复材料提炼中。</Ogre_Make_NanoTechFuelFromBase.jobString>
+
+
+</LanguageData>

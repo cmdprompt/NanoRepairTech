@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Apparel -->
+
+  <Ogre_NanoApparelRate.label>纳米服装修复</Ogre_NanoApparelRate.label>
+  <Ogre_NanoApparelRate.description>纳米单元修复服装的速度。</Ogre_NanoApparelRate.description>
+  <Ogre_NanoApparelRate.formatString>{0}%</Ogre_NanoApparelRate.formatString>
+
+
+  <!-- Weapons -->
+
+  <Ogre_NanoWeaponsRate.label>纳米武器修复</Ogre_NanoWeaponsRate.label>
+  <Ogre_NanoWeaponsRate.description>纳米单元修复武器的速度。</Ogre_NanoWeaponsRate.description>
+  <Ogre_NanoWeaponsRate.formatString>{0}%</Ogre_NanoWeaponsRate.formatString>
+
+
+</LanguageData>

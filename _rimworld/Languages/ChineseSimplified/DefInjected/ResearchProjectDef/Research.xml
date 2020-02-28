@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Ogre_NanoTech.label>纳米修复技术</Ogre_NanoTech.label>
+  <Ogre_NanoTech.description>允许建造纳米修复床和储物架。可以修复睡眠中的殖民者装备的服装和储存在储物架的服装。所有修复单元都需要电力和纳米修复材料来驱动。 可在机械加工台上和精炼设备中制造难民修复材料。</Ogre_NanoTech.description>
+
+  <Ogre_NanoTech_Breakdown.label>服装分解获取基底</Ogre_NanoTech_Breakdown.label>
+  <Ogre_NanoTech_Breakdown.description>在精炼设备将服装分解为纳米修复材料基底，可以通过进一步研究将其提炼为纳米修复材料。 这个过程是破坏性的，且会浪费大部分衣物中的材料。</Ogre_NanoTech_Breakdown.description>
+
+  <Ogre_NanoTech_Refine.label>纳米提炼技术</Ogre_NanoTech_Refine.label>
+  <Ogre_NanoTech_Refine.description>通过消耗纺织品/皮革提炼纳米修复材料基底为纳米修复燃料。 该过程需要化合燃料作为催化剂。</Ogre_NanoTech_Refine.description>
+
+  <Ogre_NanoTech_Weapons.label>增强纳米材料</Ogre_NanoTech_Weapons.label>
+  <Ogre_NanoTech_Weapons.description>增强纳米技术单元，加入延伸臂。 增强后的纳米修复材料不仅可以修复服装还可以修复武器</Ogre_NanoTech_Weapons.description>
+
+  <Ogre_NanoTech_Advanced.label>电屏蔽纳米材料</Ogre_NanoTech_Advanced.label>
+  <Ogre_NanoTech_Advanced.description>进一步改进纳米技术单元，大大提高其电屏蔽性能。 这使纳米技术单元可以在更高的功率下工作，从而提高修复效率。</Ogre_NanoTech_Advanced.description>
+
+
+</LanguageData>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ResourceBase">
+		<defName>Ogre_NanoTechFuel</defName>
+		<label>nano tech fuel</label>
+		<description>An amalgam of steel, textiles/leather and chemfuel. Nanites can use this material to repair weapons and apparel.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Ogre_Fuel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>150</stackLimit>
+		<!--
+		<deepCommonality>2</deepCommonality>
+		<deepCountPerCell>600</deepCountPerCell>
+		<deepCountPerPortion>40</deepCountPerPortion>
+		<deepLumpSizeRange>
+			<min>6</min>
+			<max>24</max>
+		</deepLumpSizeRange>
+		-->
+		<statBases>
+			<MarketValue>2.7</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>0.05</Mass>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+		<tradeability>All</tradeability>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>Ogre_NanoTechFuelBase</defName>
+		<label>nano tech fuel base</label>
+		<description>A collection of extremely viscous chemicals refined from apparel. Can be refined to create nanite fuel.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Ogre_Breakdown</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>150</stackLimit>
+		<!--
+		<deepCommonality>2</deepCommonality>
+		<deepCountPerCell>600</deepCountPerCell>
+		<deepCountPerPortion>40</deepCountPerPortion>
+		<deepLumpSizeRange>
+			<min>6</min>
+			<max>24</max>
+		</deepLumpSizeRange>
+		-->
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>0.05</Mass>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+		<tradeability>Sellable</tradeability>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+	</ThingDef>
+</Defs>

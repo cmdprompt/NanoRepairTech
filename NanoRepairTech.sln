@@ -1,11 +1,8 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NanoRepairTech", "NanoRepairTech.csproj", "{A4D13460-56BE-4177-A0F5-98F3887875C9}"
-EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "_rimworld(1)", "_rimworld\", "{7F0798FB-0D7A-477C-B54D-4DD3586A3520}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "_rimworld", "_rimworld\", "{7F0798FB-0D7A-477C-B54D-4DD3586A3520}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_6785"
@@ -23,8 +20,17 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "_rimworld(1)", "_rimworld\"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "6785"
+		SlnRelativePath = "_rimworld\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.0", "1.0", "{5C271BD3-C48A-4483-8B46-021258AE61ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.1", "1.1", "{8B0AB8D4-3D92-4E3E-8164-DC5964EEE7A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NanoRepairTech", "1.0\NanoRepairTech.csproj", "{A4D13460-56BE-4177-A0F5-98F3887875C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NanoRepairTech", "1.1\NanoRepairTech.csproj", "{CD50FEEF-C915-411D-9260-3BB3A025D8CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,16 +38,24 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A4D13460-56BE-4177-A0F5-98F3887875C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A4D13460-56BE-4177-A0F5-98F3887875C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A4D13460-56BE-4177-A0F5-98F3887875C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A4D13460-56BE-4177-A0F5-98F3887875C9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7F0798FB-0D7A-477C-B54D-4DD3586A3520}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7F0798FB-0D7A-477C-B54D-4DD3586A3520}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F0798FB-0D7A-477C-B54D-4DD3586A3520}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{7F0798FB-0D7A-477C-B54D-4DD3586A3520}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{A4D13460-56BE-4177-A0F5-98F3887875C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4D13460-56BE-4177-A0F5-98F3887875C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4D13460-56BE-4177-A0F5-98F3887875C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4D13460-56BE-4177-A0F5-98F3887875C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD50FEEF-C915-411D-9260-3BB3A025D8CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD50FEEF-C915-411D-9260-3BB3A025D8CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD50FEEF-C915-411D-9260-3BB3A025D8CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD50FEEF-C915-411D-9260-3BB3A025D8CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A4D13460-56BE-4177-A0F5-98F3887875C9} = {5C271BD3-C48A-4483-8B46-021258AE61ED}
+		{CD50FEEF-C915-411D-9260-3BB3A025D8CD} = {8B0AB8D4-3D92-4E3E-8164-DC5964EEE7A2}
 	EndGlobalSection
 EndGlobal

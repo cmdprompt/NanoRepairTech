@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Just Regular 1x1 shelf (same gFX as nano 1x1 shelf) -->
+
+  <Ogre_1x1_Shelf.label>储物架 (1x1)</Ogre_1x1_Shelf.label>
+  <Ogre_1x1_Shelf.description>用于存放杂物的架子。即使露天放置，存放在其中的物品也不会老化。</Ogre_1x1_Shelf.description>
+
+
+  <!-- Beds -->
+
+  <Ogre_NanoTech_Bed.label>纳米修复单人床</Ogre_NanoTech_Bed.label>
+  <Ogre_NanoTech_Bed.description>舒适的床垫和床单，可供休息，并缓慢修复使用者损坏的服装/武器。</Ogre_NanoTech_Bed.description>
+
+  <Ogre_NanoTech_DoubleBed.label>纳米修复双人床</Ogre_NanoTech_DoubleBed.label>
+  <Ogre_NanoTech_DoubleBed.description>一张纳米修复双人床，可供休息，并缓慢修复使用者损坏的服装/武器。</Ogre_NanoTech_DoubleBed.description>
+
+  <Ogre_NanoTech_RoyalBed.label>纳米修复豪华双人床</Ogre_NanoTech_RoyalBed.label>
+  <Ogre_NanoTech_RoyalBed.description>适合高贵之人的奢华镶金床铺，美观而舒适，可以容纳两人，并缓慢修复使用者损坏的服装/武器。</Ogre_NanoTech_RoyalBed.description>
+
+  <Ogre_NanoTech_HospitalBed.label>纳米修复医疗床</Ogre_NanoTech_HospitalBed.label>
+  <Ogre_NanoTech_HospitalBed.description>为病患设计的医疗床，增加医疗效率，并缓慢修复使用者损坏的服装/武器。</Ogre_NanoTech_HospitalBed.description>
+
+
+  <!-- Shelves -->
+
+  <Ogre_NanoTech_2x1_Shelf.label>纳米修复储物架 (2x1)</Ogre_NanoTech_2x1_Shelf.label>
+  <Ogre_NanoTech_2x1_Shelf.description>纳米修复储物架，即使露天放置，存放在其中的物品也不会老化，如果用于存放服装/武器，它们会慢慢被修复。</Ogre_NanoTech_2x1_Shelf.description>
+
+  <Ogre_NanoTech_1x1_Shelf.label>纳米修复储物架 (1x1)</Ogre_NanoTech_1x1_Shelf.label>
+  <Ogre_NanoTech_1x1_Shelf.description>纳米修复储物架，即使露天放置，存放在其中的物品也不会老化，如果用于存放服装/武器，它们会慢慢被修复。</Ogre_NanoTech_1x1_Shelf.description>
+
+
+  <!-- Animal Beds -->
+
+  <Ogre_NanoTech_AnimalSleepingBox.label>纳米修复动物盒子</Ogre_NanoTech_AnimalSleepingBox.label>
+  <Ogre_NanoTech_AnimalSleepingBox.description>一个供动物入睡的小盒子，适合鸡，猫或小狗等较小的动物，并慢慢修复其损坏的服装/武器。</Ogre_NanoTech_AnimalSleepingBox.description>
+
+  <Ogre_NanoTech_AnimalBed.label>纳米修复动物床铺</Ogre_NanoTech_AnimalBed.label>
+  <Ogre_NanoTech_AnimalBed.description>一个供动物入睡的柔软床铺，适合任何动物，并慢慢修复其损坏的服装/武器。</Ogre_NanoTech_AnimalBed.description>
+
+
+</LanguageData>

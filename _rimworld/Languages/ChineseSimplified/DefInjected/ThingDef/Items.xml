@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Ogre_NanoTechFuel.label>纳米修复材料</Ogre_NanoTechFuel.label>
+  <Ogre_NanoTechFuel.description>钢铁，纺织品/皮革和化合燃料的融合产物。纳米修复单元可以使用这种材料来修理武器和服装。</Ogre_NanoTechFuel.description>
+
+  <Ogre_NanoTechFuelBase.label>纳米修复材料基底</Ogre_NanoTechFuelBase.label>
+  <Ogre_NanoTechFuelBase.description>从服装中提炼出的极粘稠化合物质。</Ogre_NanoTechFuelBase.description>
+
+
+</LanguageData>

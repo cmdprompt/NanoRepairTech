@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <NanoTech.ModName>纳米修复技术</NanoTech.ModName>
+
+  <!-- added to the defname for other mods items -->
+  <NanoTech.ModName.Short>纳米技术</NanoTech.ModName.Short>
+
+  <!-- Added to existing descriptions for other mods furniture that is supported -->
+  <NanoTech.Description.Short>通过纳米修复单元缓慢修复服装和武器</NanoTech.Description.Short>
+
+</LanguageData>
