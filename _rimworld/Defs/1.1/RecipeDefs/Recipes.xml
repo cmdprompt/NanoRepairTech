@@ -61,7 +61,6 @@
 			<disallowedThingDefs>
 				<li>WoolMegasloth</li>
 				<li>WoolMuffalo</li>
-				<li>WoolCamel</li>
 				<li>WoolAlpaca</li>
 				<li>WoolMuffalo</li>
 				<li>Leather_Thrumbo</li>
@@ -175,7 +174,6 @@
 			<disallowedThingDefs>
 				<li>WoolMegasloth</li>
 				<li>WoolMuffalo</li>
-				<li>WoolCamel</li>
 				<li>WoolAlpaca</li>
 				<li>WoolMuffalo</li>
 				<li>Leather_Thrumbo</li>
