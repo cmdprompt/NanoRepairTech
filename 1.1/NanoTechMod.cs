@@ -31,6 +31,9 @@ namespace Ogre.NanoRepairTech
 			new SupportedBed("Vanilla Furniture Expanded", "Bed_DoubleErgonomic"),
 			new SupportedBed("Vanilla Furniture Expanded", "Bed_Kingsize"),
 
+			// Vanilla Furniture Expanded Spacer
+			new SupportedBed("Vanilla Furniture Expanded - Spacer Module", "Bed_AdvBed"),
+			new SupportedBed("Vanilla Furniture Expanded - Spacer Module", "Bed_AdvDoubleBed"),
 			// Vanilla Furniture Expanded - Medical Module
 			new SupportedBed("Vanilla Furniture Expanded - Medical Module", "Bed_OperatingTable", true)
 		};

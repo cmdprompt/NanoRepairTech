@@ -103,7 +103,7 @@ namespace Ogre.NanoRepairTech
 						}
 					}
 
-					if (a.WornByCorpse && a.HitPoints >= a.MaxHitPoints)
+					if (a.WornByCorpse && a.HitPoints >= (a.MaxHitPoints * 0.98))
 					{
 						FieldInfo info = a.GetType().GetField("wornByCorpseInt", BindingFlags.Instance | BindingFlags.NonPublic);
 						info.SetValue(a, false);
