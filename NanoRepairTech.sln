@@ -32,6 +32,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NanoRepairTech", "1.0\NanoR
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NanoRepairTech", "1.1\NanoRepairTech.csproj", "{CD50FEEF-C915-411D-9260-3BB3A025D8CD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.2", "1.2", "{0CB5DE5D-3964-420B-AACB-15E056D7AF6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NanoRepairTech", "1.2\NanoRepairTech.csproj", "{FA411E5A-1DC0-4885-A085-B6D205DA323A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,13 +47,15 @@ Global
 		{7F0798FB-0D7A-477C-B54D-4DD3586A3520}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{7F0798FB-0D7A-477C-B54D-4DD3586A3520}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{A4D13460-56BE-4177-A0F5-98F3887875C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A4D13460-56BE-4177-A0F5-98F3887875C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4D13460-56BE-4177-A0F5-98F3887875C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4D13460-56BE-4177-A0F5-98F3887875C9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CD50FEEF-C915-411D-9260-3BB3A025D8CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CD50FEEF-C915-411D-9260-3BB3A025D8CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD50FEEF-C915-411D-9260-3BB3A025D8CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD50FEEF-C915-411D-9260-3BB3A025D8CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA411E5A-1DC0-4885-A085-B6D205DA323A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA411E5A-1DC0-4885-A085-B6D205DA323A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA411E5A-1DC0-4885-A085-B6D205DA323A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA411E5A-1DC0-4885-A085-B6D205DA323A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,5 +63,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{A4D13460-56BE-4177-A0F5-98F3887875C9} = {5C271BD3-C48A-4483-8B46-021258AE61ED}
 		{CD50FEEF-C915-411D-9260-3BB3A025D8CD} = {8B0AB8D4-3D92-4E3E-8164-DC5964EEE7A2}
+		{FA411E5A-1DC0-4885-A085-B6D205DA323A} = {0CB5DE5D-3964-420B-AACB-15E056D7AF6F}
 	EndGlobalSection
 EndGlobal
