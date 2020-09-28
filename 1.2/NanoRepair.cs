@@ -196,14 +196,15 @@ namespace Ogre.NanoRepairTech
 			switch (quality)
 			{
 				case QualityCategory.Legendary:
+					return 1.5f;
 				case QualityCategory.Masterwork:
 					return 1.1f;
 				case QualityCategory.Excellent:
 					return 1.0f;
 				case QualityCategory.Good:
-					return 0.95f;
+					return 0.98f;
 				case QualityCategory.Normal:
-					return 0.90f;
+					return 0.97f;
 				case QualityCategory.Poor:
 					return 0.85f;
 				case QualityCategory.Awful:
