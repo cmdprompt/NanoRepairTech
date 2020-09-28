@@ -17,11 +17,11 @@
 		<hideAtValue>0</hideAtValue>
 		<parts>
 			<li Class="StatPart_Quality">
-				<factorLegendary>1.1</factorLegendary>
+				<factorLegendary>1.5</factorLegendary>
 				<factorMasterwork>1.1</factorMasterwork>
 				<factorExcellent>1.0</factorExcellent>
-				<factorGood>0.95</factorGood>
-				<factorNormal>0.9</factorNormal>
+				<factorGood>0.98</factorGood>
+				<factorNormal>0.97</factorNormal>
 				<factorPoor>0.85</factorPoor>
 				<factorAwful>0.8</factorAwful>
 			</li>
@@ -39,11 +39,11 @@
 		<hideAtValue>-1</hideAtValue>
 		<parts>
 			<li Class="StatPart_Quality">
-				<factorLegendary>1.1</factorLegendary>
+				<factorLegendary>1.5</factorLegendary>
 				<factorMasterwork>1.1</factorMasterwork>
 				<factorExcellent>1.0</factorExcellent>
-				<factorGood>0.95</factorGood>
-				<factorNormal>0.9</factorNormal>
+				<factorGood>0.98</factorGood>
+				<factorNormal>0.97</factorNormal>
 				<factorPoor>0.85</factorPoor>
 				<factorAwful>0.8</factorAwful>
 			</li>
