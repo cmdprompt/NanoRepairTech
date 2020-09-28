@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using RimWorld;
 using Verse;
 
 namespace Ogre.NanoRepairTech
@@ -35,16 +37,40 @@ namespace Ogre.NanoRepairTech
 
 		//===============================================================================\\
 
-		public override void ConsumeIngredient(Thing ingredient, RecipeDef recipe, Map map)
+		public override void Notify_IterationCompleted(Pawn billDoer, List<Thing> ingredients)
 		{
-			ThingDef breakdown = Verse.DefDatabase<ThingDef>.GetNamed("Ogre_NanoTechFuelBase");
-			Thing result = Verse.ThingMaker.MakeThing(breakdown, null);
-			float scale = GetTechScaler(ingredient);
-			result.stackCount = Math.Max(1, (int)Math.Floor(scale * ingredient.HitPoints));
+			ThingDef breakDown = Verse.DefDatabase<ThingDef>.GetNamed("Ogre_NanoTechFuelBase");
 
-			Verse.GenPlace.TryPlaceThing(result, ingredient.Position, map, ThingPlaceMode.Near);
-			base.ConsumeIngredient(ingredient, recipe, map);
+			int stackCount = 0;
+
+			for (int i = ingredients.Count - 1; i > -1; i--)
+			{
+				float scale = GetTechScaler(ingredients[i]);
+				stackCount += Math.Max(1, (int)Math.Floor(scale * ingredients[i].HitPoints));
+			}
+
+			// <products> count=0 breaks the bills
+			// if action is drop on floor, to fix it
+			// let the count = 1 be the default
+			// and subtract 1 from the stackcount
+			// for all other cases
+
+			if (stackCount == 1)
+			{
+				// let default recipe def
+				// generate the fuel item
+			}
+			else
+			{
+				// add stackCount -1 to what
+				// the fuel base total they are already carrying
+				
+				Thing result = Verse.ThingMaker.MakeThing(breakDown, null);
+				result.stackCount = stackCount -1;
+				billDoer.carryTracker.TryStartCarry(result);
+			}
+
+			base.Notify_IterationCompleted(billDoer, ingredients);
 		}
-
 	}
 }
