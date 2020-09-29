@@ -16,7 +16,7 @@
 			<li>ComplexFurniture</li>
 			<li>Machining</li>
 		</prerequisites>
-		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<!--<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>-->
 		<researchViewX>0</researchViewX>
 		<researchViewY>1</researchViewY>
 	</ResearchProjectDef>
