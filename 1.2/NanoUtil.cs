@@ -142,6 +142,26 @@ namespace Ogre.NanoRepairTech
 					f.linkableBuildings.Add(nBed);
 			}
 
+			List<RoyalTitleDef> titles = DefDatabase<RoyalTitleDef>.AllDefsListForReading;
+			if (titles != null)
+			{
+				foreach (RoyalTitleDef title in titles)
+				{
+					List<RoomRequirement> requirements = title.bedroomRequirements;
+					if (requirements != null)
+					{
+						foreach (RoomRequirement req in requirements)
+						{
+							RoomRequirement_ThingAnyOf any = (req as RoomRequirement_ThingAnyOf);
+							if (any != null)
+							{
+								any.things.Add(nBed);
+							}
+						}
+					}
+				}
+			}
+
 			if (fnAdditionalProcessing != null)
 				fnAdditionalProcessing.Invoke(nBed);
 
