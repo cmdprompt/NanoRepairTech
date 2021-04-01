@@ -122,7 +122,7 @@
 		<costList>
 			<ComponentIndustrial>2</ComponentIndustrial>
 			<Steel>30</Steel>
-			<Plasteel>15</Plasteel>
+			<!--<Plasteel>15</Plasteel>-->
 		</costList>
 		<fillPercent>0.4</fillPercent>
 		<pathCost>60</pathCost>
@@ -200,7 +200,7 @@
 		<costList>
 			<ComponentIndustrial>4</ComponentIndustrial>
 			<Steel>70</Steel>
-			<Plasteel>30</Plasteel>
+			<!--<Plasteel>30</Plasteel>-->
 		</costList>
 		<building>
 			<bed_showSleeperBody>False</bed_showSleeperBody>
@@ -285,7 +285,7 @@
 			<Gold>50</Gold>
 			<ComponentIndustrial>4</ComponentIndustrial>
 			<Steel>70</Steel>
-			<Plasteel>30</Plasteel>
+			<!--<Plasteel>30</Plasteel>-->
 		</costList>
 		<building>
 			<bed_showSleeperBody>False</bed_showSleeperBody>
@@ -364,7 +364,7 @@
 		<costStuffCount>80</costStuffCount>
 		<costList>
 			<ComponentIndustrial>8</ComponentIndustrial>
-			<Plasteel>15</Plasteel>
+			<!--<Plasteel>15</Plasteel>-->
 			<Steel>120</Steel>
 		</costList>
 		<building>
@@ -607,7 +607,7 @@
 		<costList>
 			<ComponentIndustrial>2</ComponentIndustrial>
 			<Steel>15</Steel>
-			<Plasteel>5</Plasteel>
+			<!--<Plasteel>5</Plasteel>-->
 		</costList>
 		<building>
 			<bed_humanlike>false</bed_humanlike>
@@ -686,7 +686,7 @@
 		<costList>
 			<ComponentIndustrial>2</ComponentIndustrial>
 			<Steel>30</Steel>
-			<Plasteel>5</Plasteel>
+			<!--<Plasteel>5</Plasteel>-->
 		</costList>
 		<building>
 			<bed_humanlike>false</bed_humanlike>

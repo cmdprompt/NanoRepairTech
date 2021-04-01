@@ -7,6 +7,7 @@ namespace Ogre.NanoRepairTech
 {
 	public class BreakdownWorker : RecipeWorker
 	{
+		private int corpseApparel;
 		public BreakdownWorker() { }
 
 		//===============================================================================\\
@@ -35,12 +36,48 @@ namespace Ogre.NanoRepairTech
 			}
 		}
 
+		public override void ConsumeIngredient(Thing ingredient, RecipeDef recipe, Map map)
+		{
+			corpseApparel = 0;
+
+			Verse.Log.Message("CorpseApparel: " + corpseApparel);
+			Corpse c = ingredient as Corpse;
+			if (c != null)
+			{
+				Pawn p = c.InnerPawn;
+				if (p != null && p.apparel != null)
+				{
+					foreach (Apparel a in p.apparel.WornApparel)
+					{
+						float scale = GetTechScaler(a);
+						corpseApparel += Math.Max(1, (int)Math.Floor(scale * a.HitPoints));
+					}
+					
+					//foreach (Apparel a in this.corpseApparel)
+					//{
+					//	Verse.Log.Message(" : "
+					//		+ a.def.defName
+					//		+ " -> "
+					//		+ this.recipe.fixedIngredientFilter.Allows((Thing)a)
+					//	);
+						
+					//}
+				}
+			}
+
+			//Verse.Log.Message("ConsumeIngredient");
+			//Verse.Log.Message("IsCorpse: " + (ingredient is Corpse));
+			//Verse.Log.Message("InnerPawn: " + ((ingredient as Corpse).InnerPawn == null));
+
+			base.ConsumeIngredient(ingredient, recipe, map);
+		}
+
 		//===============================================================================\\
 
 		public override void Notify_IterationCompleted(Pawn billDoer, List<Thing> ingredients)
 		{
 			ThingDef breakDown = Verse.DefDatabase<ThingDef>.GetNamed("Ogre_NanoTechFuelBase");
-
+			
 			int stackCount = 0;
 
 			for (int i = ingredients.Count - 1; i > -1; i--)
@@ -48,6 +85,9 @@ namespace Ogre.NanoRepairTech
 				float scale = GetTechScaler(ingredients[i]);
 				stackCount += Math.Max(1, (int)Math.Floor(scale * ingredients[i].HitPoints));
 			}
+
+			// if it was a corpse
+			stackCount += corpseApparel;
 
 			// <products> count=0 breaks the bills
 			// if action is drop on floor, to fix it

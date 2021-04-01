@@ -61,12 +61,12 @@ namespace Ogre.NanoRepairTech
 			{
 				{ "ComponentIndustrial", 2 },
 				{ "Steel", 30 },
-				{ "Plasteel", 15 }
+				//{ "Plasteel", 15 }
 			};
 			if (!bed.building.bed_humanlike)
 			{
 				cost["Steel"] = 15;
-				cost["Plasteel"] = 5;
+				//cost["Plasteel"] = 5;
 			}
 
 			if (nBed.costList == null)

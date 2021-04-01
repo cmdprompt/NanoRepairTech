@@ -45,6 +45,7 @@ namespace Ogre.NanoRepairTech
 
 					if (NanoRepair.IsWeaponResearchComplete())
 					{
+						// Main Weapon
 						if (occupant.equipment != null && occupant.equipment.GetDirectlyHeldThings() != null)
 						{
 							weapons.AddRange(new List<Thing>(occupant.equipment.GetDirectlyHeldThings()).Where(x =>
@@ -53,6 +54,19 @@ namespace Ogre.NanoRepairTech
 									&& (x.def != null)
 									&& (x.def.IsRangedWeapon || x.def.IsMeleeWeapon);
 							}));
+						}
+
+						// Sidearm
+						if (occupant.inventory != null && occupant.inventory.GetDirectlyHeldThings() != null)
+						{
+							foreach (Thing t in new List<Thing>(occupant.inventory.GetDirectlyHeldThings()))
+							{
+								if (t != null && t.def != null && (t.def.IsRangedWeapon || t.def.IsMeleeWeapon))
+								{
+									weapons.Add(t);
+									break;
+								}
+							}
 						}
 					}
 				}

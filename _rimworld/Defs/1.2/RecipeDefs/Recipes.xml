@@ -154,7 +154,60 @@
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
 	</RecipeDef>
-	
+
+	<RecipeDef>
+		<workerClass>Ogre.NanoRepairTech.BreakdownWorker</workerClass>
+		<defName>Ogre_Make_NanoTechFuelBase_Corpse</defName>
+		<recipeUsers>
+			<li>BiofuelRefinery</li>
+		</recipeUsers>
+		<label>breakdown corpse</label>
+		<description>Breakdown apparel and corpse's into chemicals useful to Nano Tech units. The amount of chemicals extracted will be related to how damaged the apparel is, and what tech level it is. i.e. You will be able to extract more chemicals from PowerArmor than a Tribal Mask.</description>
+		<jobString>Breaking down corpse.</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>700</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<!--<allowMixingIngredients>true</allowMixingIngredients>-->
+		<autoStripCorpses>false</autoStripCorpses>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Corpses</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Corpses</li>
+			</categories>
+			<disallowedCategories>
+				<li>CorpsesMechanoid</li>
+			</disallowedCategories>
+			<!--
+			<specialFiltersToDisallow>
+				<li>AllowRotten</li>
+				<li>AllowFresh</li>
+			</specialFiltersToDisallow>-->
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>CorpsesHumanlike</li>
+			</categories>
+		</defaultIngredientFilter>
+		<products>
+			<Ogre_NanoTechFuelBase>1</Ogre_NanoTechFuelBase>
+		</products>
+		<researchPrerequisite>Ogre_NanoTech_Breakdown_Corpse</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
 
 	<RecipeDef>
 		<defName>Ogre_Make_NanoTechFuelFromBase</defName>
