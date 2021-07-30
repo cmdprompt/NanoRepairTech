@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef>
+		<defName>Ogre_NanoTech_HeDiffHealScar</defName>
+		<label>Hediff Heal Scar</label>
+		<labelNoun>label noun</labelNoun>
+		<hediffClass>Ogre.NanoRepairTech.Hediff_NanoTechHealScar</hediffClass>
+		<description>Nano Tech description (heal scar)</description>
+		<tendable>false</tendable>
+		<displayWound>false</displayWound>
+		<labelNounPretty>{0} in the {1}</labelNounPretty>
+		<comps>
+			<li Class="HediffCompProperties_DisappearsOnDeath" />
+		</comps>
+		<injuryProps>
+			<painPerSeverity>0.0</painPerSeverity>
+			<bleedRate>0.0</bleedRate>
+			<canMerge>false</canMerge>
+		</injuryProps>
+	</HediffDef>
+</Defs>

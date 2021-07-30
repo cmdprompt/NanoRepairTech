@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ResourceBase" Name="NanoTech_SerumBase" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>0.2</Mass>
+			<DeteriorationRate>2.0</DeteriorationRate>
+			<Flammability>0.2</Flammability>
+		</statBases>
+		<techLevel>Ultra</techLevel>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<comps>
+			<li Class="CompProperties_UseEffectPlaySound">
+				<soundOnUsed>MechSerumUsed</soundOnUsed>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="NanoTech_SerumBase">
+		<defName>NanoTech_ScarHealer</defName>
+		<label>Nano Tech Scar Healer</label>
+		<description>One Time Use scar.</description>
+		<graphicData>
+			<texPath>Things/Item/Special/MechSerumHealer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>10</stackLimit>
+		<statBases>
+			<MarketValue>200</MarketValue>
+		</statBases>
+		<thingCategories>
+			<li>Items</li>
+		</thingCategories>
+		<tradeability>None</tradeability>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>UseItem</useJob>
+				<useLabel>Use Nano Tech serum</useLabel>
+				<useDuration>600</useDuration>
+			</li>
+			<li Class="CompProperties_UseEffect">
+				<compClass>Ogre.NanoRepairTech.CompUseEffect_NanoTechHealScar</compClass>
+			</li>
+			<li Class="CompProperties_UseEffect">
+				<compClass>CompUseEffect_DestroySelf</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>
