@@ -93,6 +93,7 @@
 						<li>Ogre_NanoTechFuel</li>
 					</thingDefs>
 				</fuelFilter>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
 		</comps>
 		<statBases>
@@ -109,6 +110,7 @@
 			<Ogre_NanoWeaponsRate>0</Ogre_NanoWeaponsRate>
 		</statBases>
 		<tickerType>Rare</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
 		<size>(1,2)</size>
 		<stuffCategories>
 			<li>Metallic</li>
@@ -175,6 +177,7 @@
 						<li>Ogre_NanoTechFuel</li>
 					</thingDefs>
 				</fuelFilter>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
 		</comps>
 		<statBases>
@@ -191,6 +194,7 @@
 			<Ogre_NanoWeaponsRate>0</Ogre_NanoWeaponsRate>
 		</statBases>
 		<tickerType>Rare</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
 		<size>(2,2)</size>
 		<stuffCategories>
 			<li>Metallic</li>
@@ -259,6 +263,7 @@
 						<li>Ogre_NanoTechFuel</li>
 					</thingDefs>
 				</fuelFilter>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
 		</comps>
 		<statBases>
@@ -275,6 +280,7 @@
 			<Ogre_NanoWeaponsRate>0</Ogre_NanoWeaponsRate>
 		</statBases>
 		<tickerType>Rare</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
 		<size>(2,2)</size>
 		<stuffCategories>
 			<li>Metallic</li>
@@ -331,7 +337,7 @@
 			<SurgerySuccessChanceFactor>1.1</SurgerySuccessChanceFactor>
 			<Ogre_NanoApparelRate>0</Ogre_NanoApparelRate>
 			<Ogre_NanoWeaponsRate>0</Ogre_NanoWeaponsRate>
-	</statBases>
+		</statBases>
 		<comps>
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
@@ -356,9 +362,11 @@
 						<li>Ogre_NanoTechFuel</li>
 					</thingDefs>
 				</fuelFilter>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
 		</comps>
 		<tickerType>Rare</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
 		<size>(1,2)</size>
 		<stuffCategories>
 			<li>Metallic</li>
@@ -389,7 +397,7 @@
 		<tradeability>None</tradeability>
 		<designationCategory>Ogre_NanoRepairTech_DesignationCategory</designationCategory>
 	</ThingDef>
-	
+
 	<!-- Shelves -->
 	<ThingDef ParentName="FurnitureWithQualityBase">
 		<thingClass>Ogre.NanoRepairTech.NanoShelf</thingClass>
@@ -417,6 +425,7 @@
 						<li>Ogre_NanoTechFuel</li>
 					</thingDefs>
 				</fuelFilter>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
 		</comps>
 		<altitudeLayer>Building</altitudeLayer>
@@ -466,6 +475,7 @@
 			<li>Ogre_NanoTech</li>
 		</researchPrerequisites>
 		<tickerType>Rare</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
 		<tradeability>None</tradeability>
 		<designationCategory>Ogre_NanoRepairTech_DesignationCategory</designationCategory>
 		<techLevel>Industrial</techLevel>
@@ -497,6 +507,7 @@
 						<li>Ogre_NanoTechFuel</li>
 					</thingDefs>
 				</fuelFilter>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
 		</comps>
 		<altitudeLayer>Building</altitudeLayer>
@@ -546,6 +557,7 @@
 			<li>Ogre_NanoTech</li>
 		</researchPrerequisites>
 		<tickerType>Rare</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
 		<tradeability>None</tradeability>
 		<uiIconScale>0.70</uiIconScale>
 		<designationCategory>Ogre_NanoRepairTech_DesignationCategory</designationCategory>
@@ -556,7 +568,7 @@
 	<ThingDef ParentName="FurnitureWithQualityBase">
 		<thingClass>Ogre.NanoRepairTech.NanoBed</thingClass>
 		<defName>Ogre_NanoTech_AnimalSleepingBox</defName>
-		
+
 		<label>nano tech animal sleeping box</label>
 		<description>A small box for animals to sleep in. Fits smaller animals like chickens, cats, or small dogs. Slowly repairs damage to equipped apparel/weaponry.</description>
 		<rotatable>false</rotatable>
@@ -591,6 +603,7 @@
 						<li>Ogre_NanoTechFuel</li>
 					</thingDefs>
 				</fuelFilter>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
 			<li Class="CompProperties_AssignableToPawn">
 				<drawAssignmentOverlay>false</drawAssignmentOverlay>
@@ -633,6 +646,7 @@
 			<li>Ogre_NanoTech</li>
 		</researchPrerequisites>
 		<tickerType>Rare</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
 		<uiIconScale>0.75</uiIconScale>
 		<tradeability>None</tradeability>
 		<designationCategory>Ogre_NanoRepairTech_DesignationCategory</designationCategory>
@@ -669,6 +683,7 @@
 						<li>Ogre_NanoTechFuel</li>
 					</thingDefs>
 				</fuelFilter>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
 			<li Class="CompProperties_AssignableToPawn">
 				<drawAssignmentOverlay>false</drawAssignmentOverlay>
@@ -710,6 +725,7 @@
 			<li>Ogre_NanoTech</li>
 		</researchPrerequisites>
 		<tickerType>Rare</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
 		<tradeability>None</tradeability>
 		<designationCategory>Ogre_NanoRepairTech_DesignationCategory</designationCategory>
 	</ThingDef>
