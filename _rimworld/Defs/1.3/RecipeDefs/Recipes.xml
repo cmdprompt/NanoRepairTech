@@ -166,7 +166,7 @@
 			<li>BiofuelRefinery</li>
 		</recipeUsers>
 		<label>breakdown corpse</label>
-		<description>Breakdown apparel and corpse's into chemicals useful to Nano Tech units. The amount of chemicals extracted will be related to how damaged the apparel is, and what tech level it is. i.e. You will be able to extract more chemicals from PowerArmor than a Tribal Mask.</description>
+		<description>Breakdown a corpse and all the apparel it has equipped into chemicals useful to Nano Tech units. The amount of chemicals extracted will be related to how damaged the apparel is, and what tech level it is. i.e. You will be able to extract more chemicals from Marine Armor than a Tribal Mask. (note: stripping the corpse and breaking down the apparel separately is not necessary)</description>
 		<jobString>Breaking down corpse.</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
