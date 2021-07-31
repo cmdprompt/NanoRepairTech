@@ -59,15 +59,9 @@ namespace Ogre.NanoRepairTech
 			
 			Dictionary<string, int> cost = new Dictionary<string, int>()
 			{
-				{ "ComponentIndustrial", 2 },
-				{ "Steel", 30 },
-				{ "Plasteel", 15 }
+				{ "ComponentIndustrial", 1 },
+				{ "Steel", 5 }
 			};
-			if (!bed.building.bed_humanlike)
-			{
-				cost["Steel"] = 15;
-				cost["Plasteel"] = 5;
-			}
 
 			if (nBed.costList == null)
 				nBed.costList = new List<ThingDefCountClass>();
@@ -80,12 +74,12 @@ namespace Ogre.NanoRepairTech
 				ThingDefCountClass count = null;
 				if (!current.TryGetValue(item, out count))
 				{
-					count = new ThingDefCountClass(ThingDef.Named(item), cost[item]);
+					count = new ThingDefCountClass(ThingDef.Named(item), (cost[item] * nBed.size.x));
 					nBed.costList.Add(count);
 				}
 				else
 				{
-					count.count += cost[item];
+					count.count += (cost[item] * nBed.size.x);
 				}
 			}
 
@@ -111,11 +105,15 @@ namespace Ogre.NanoRepairTech
 			nBed.tradeability = Tradeability.None;
 			nBed.scatterableOnMapGen = false;
 			nBed.tickerType = TickerType.Rare;
-			nBed.constructionSkillPrerequisite = 8;
+			nBed.constructionSkillPrerequisite = bed.constructionSkillPrerequisite < 2 ? 2 : bed.constructionSkillPrerequisite;
 			nBed.uiIconScale = 0.9f;
 			nBed.techLevel = TechLevel.Industrial;
 			nBed.shortHash = 0;
-			
+
+			// as of 1.3 without this, it wont
+			// show the out of fuel icon
+			nBed.drawerType = DrawerType.RealtimeOnly;
+
 			nBed.designationCategory = DefDatabase<DesignationCategoryDef>.AllDefsListForReading.Find(x => x.defName == "Ogre_NanoRepairTech_DesignationCategory");
 
 			MethodInfo newBluePrintDef = typeof(RimWorld.ThingDefGenerator_Buildings).GetMethod("NewBlueprintDef_Thing", BindingFlags.Static | BindingFlags.NonPublic);
