@@ -14,5 +14,4 @@
   <Ogre_NanoWeaponsRate.description>ナノ修復ユニットが武器を修理するスピードです。</Ogre_NanoWeaponsRate.description>
   <Ogre_NanoWeaponsRate.formatString>{0}%</Ogre_NanoWeaponsRate.formatString>
 
-
 </LanguageData>

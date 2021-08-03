@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
   <!-- Just Regular 1x1 shelf (same gFX as nano 1x1 shelf) -->
@@ -74,6 +74,5 @@
   <Blueprint_Install_Ogre_NanoTech_AnimalBed.label>家畜用ベッド (ナノ修復)(移動先)</Blueprint_Install_Ogre_NanoTech_AnimalBed.label>
   <Frame_Ogre_NanoTech_AnimalBed.label>家畜用ベッド (ナノ修復)(施工)</Frame_Ogre_NanoTech_AnimalBed.label>
   <Frame_Ogre_NanoTech_AnimalBed.description>全ての家畜にぴったりな、家畜が寝るための柔らかなベッドです。衣服や武器のダメージをゆっくり修復します。</Frame_Ogre_NanoTech_AnimalBed.description>
-
 
 </LanguageData>

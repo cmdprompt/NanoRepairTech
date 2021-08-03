@@ -1,20 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <Ogre_NanoTech.label>ナノ修復技術</Ogre_NanoTech.label>
+  <Ogre_NanoTech.label>NanoTech: ナノ修復技術</Ogre_NanoTech.label>
   <Ogre_NanoTech.description>ナノ修復技術を使用した各種ユニット(ベッドとロッカー)の建設が可能になります。あなたがナノ修復ベッドで寝ている間、装備している衣服は修理されます。ナノ修復ロッカーに格納されている衣服は修理されます。すべてのナノ修復ユニットには、修復に消費される「ナノ修復材」を補給するためのナノチューブが付属しています。「ナノ修復材」の生産は、精密工作機械で行えますが、研究を行う事で製油施設でも作成できます。</Ogre_NanoTech.description>
 
-  <Ogre_NanoTech_Breakdown.label>衣服の化学分解</Ogre_NanoTech_Breakdown.label>
+  <Ogre_NanoTech_Breakdown.label>NanoTech: 衣服の化学分解</Ogre_NanoTech_Breakdown.label>
   <Ogre_NanoTech_Breakdown.description>製油施設で死者の着ていた汚れた衣服か、汚れていない衣服、またはその両方を、多数の化学物質の混合物に分解して「修復用混合物」に精錬できます。さらに研究を進める事で「ナノ修復材」を精製することができます。このプロセスは非常に破壊的であり、衣服から得られる有用な化学物質の大部分は役に立たないまま失われています。</Ogre_NanoTech_Breakdown.description>
 
-  <Ogre_NanoTech_Refine.label>ナノ修復材の精製</Ogre_NanoTech_Refine.label>
+  <Ogre_NanoTech_Breakdown_Corpse.label>NanoTech: 汚物の分解</Ogre_NanoTech_Breakdown_Corpse.label>
+  <Ogre_NanoTech_Breakdown_Corpse.description>バイオ燃料の製油施設はさらなる研究により、死体を装備された衣服と一緒に分解して、修復用混合物に分解精製できます。この過程は効率が非常に最悪で、投入した資源の大部分が失われた結果として有用な化学物質が得られます。</Ogre_NanoTech_Breakdown_Corpse.description>
+
+  <Ogre_NanoTech_Refine.label>NanoTech: ナノ修復材の精製</Ogre_NanoTech_Refine.label>
   <Ogre_NanoTech_Refine.description>繊維やレザーを分解し精製した「修復用混合物」を、「ナノ修復材」へさらに精製することができます。このプロセスは触媒としてバイオ化学燃料を必要とします。</Ogre_NanoTech_Refine.description>
 
-  <Ogre_NanoTech_Weapons.label>ナノ修復を武器に拡張</Ogre_NanoTech_Weapons.label>
+  <Ogre_NanoTech_Weapons.label>NanoTech: ナノ修復を武器に拡張</Ogre_NanoTech_Weapons.label>
   <Ogre_NanoTech_Weapons.description>武器の修復を組み込むために、ナノ修復技術を使った各種ユニット(ベッドやロッカー)用の「ナノ修復材」の構成を変更します。電力消費が必要になったこの変更により、衣服に加えて武器を修復することが可能になりました。</Ogre_NanoTech_Weapons.description>
 
-  <Ogre_NanoTech_Advanced.label>電気シールド</Ogre_NanoTech_Advanced.label>
+  <Ogre_NanoTech_Advanced.label>NanoTech: 電気シールド</Ogre_NanoTech_Advanced.label>
   <Ogre_NanoTech_Advanced.description>さらに、ナノ修復技術を使った各種ユニットで使用されるナノチューブの電気的シルード力を大幅に強化できるように変更します。これにより、ナノ修復装置類はより高い電力消費(W)で動作するようになりますが、衣服のナノ修復率が向上し、武器のナノ修復率が大幅に増加します。</Ogre_NanoTech_Advanced.description>
-
 
 </LanguageData>
