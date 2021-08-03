@@ -9,9 +9,16 @@
   <Ogre_Make_NanoTechFuelBase.description>衣服をナノ修復技術ユニットの材料として役立つ化学物質の混合物に精錬分解します。抽出される化学物質の量は、衣服のダメージ状態や、生産に必要な技術レベルに関係しています。例えば部族マスクよりも多くの化学物質を海兵隊アーマー(旧パワーアーマー)から抽出することができます。</Ogre_Make_NanoTechFuelBase.description>
   <Ogre_Make_NanoTechFuelBase.jobString>衣服を精錬分解中</Ogre_Make_NanoTechFuelBase.jobString>
 
+  <Ogre_Make_NanoTechFuelBase_x5.label>衣服を精錬分解 x5</Ogre_Make_NanoTechFuelBase_x5.label>
+  <Ogre_Make_NanoTechFuelBase_x5.description>衣服を5つまとめてナノ修復技術ユニットの材料として役立つ化学物質の混合物に精錬分解します。抽出される化学物質の量は、衣服のダメージ状態や、生産に必要な技術レベルに関係しています。例えば部族マスクよりも多くの化学物質を海兵隊アーマー(旧パワーアーマー)から抽出することができます。</Ogre_Make_NanoTechFuelBase_x5.description>
+  <Ogre_Make_NanoTechFuelBase_x5.jobString>衣服を精錬分解中</Ogre_Make_NanoTechFuelBase_x5.jobString>
+
+  <Ogre_Make_NanoTechFuelBase_Corpse.label>死体を精錬分解する</Ogre_Make_NanoTechFuelBase_Corpse.label>
+  <Ogre_Make_NanoTechFuelBase_Corpse.description>衣服を付けたままの死体をナノ修復技術ユニットの材料として役立つ化学物質の混合物に精錬分解します。抽出される化学物質の量は、衣服のダメージ状態や、生産に必要な技術レベルに関係しています。つまり部族マスクよりも多くの化学物質をマリーンアーマーから抽出することができます。(注:死体から衣服を剥ぎ取る必要はありません)</Ogre_Make_NanoTechFuelBase_Corpse.description>
+  <Ogre_Make_NanoTechFuelBase_Corpse.jobString>死体を精錬分解中</Ogre_Make_NanoTechFuelBase_Corpse.jobString>
+
   <Ogre_Make_NanoTechFuelFromBase.label>修復用混合物を精錬する</Ogre_Make_NanoTechFuelFromBase.label>
   <Ogre_Make_NanoTechFuelFromBase.description>「修復用混合物」と少量の繊維または皮革を材料にして「ナノ修復材」へ精錬します。このプロセスには触媒としてバイオ化学燃料を必要とします。</Ogre_Make_NanoTechFuelFromBase.description>
   <Ogre_Make_NanoTechFuelFromBase.jobString>修復用混合物を精錬中</Ogre_Make_NanoTechFuelFromBase.jobString>
-
 
 </LanguageData>
