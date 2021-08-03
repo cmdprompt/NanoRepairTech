@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef Abstract="True" Name="Ogre_NanoTech_LeatherBase" ParentName="ResourceBase">
+		<description>Tanned, dried, scraped skin. A good traditional material for making clothes and bags.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Leather</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<DeteriorationRate>2</DeteriorationRate>
+			<Mass>0.03</Mass>
+			<Flammability>1</Flammability>
+			<MarketValue>1.0</MarketValue>
+			<StuffPower_Armor_Sharp>0.81</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.24</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>1.5</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>16</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>16</StuffPower_Insulation_Heat>
+		</statBases>
+		<thingCategories>
+			<li>Leathers</li>
+		</thingCategories>
+		<burnableByRecipe>true</burnableByRecipe>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<minRewardCount>0</minRewardCount>
+		<stuffProps>
+			<categories>
+				<li>Leathery</li>
+			</categories>
+			<commonality>0.01</commonality>
+			<statFactors>
+				<MaxHitPoints>1.3</MaxHitPoints>
+			</statFactors>
+			<canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+		</stuffProps>
+	</ThingDef>
+	
+	<ThingDef ParentName="Ogre_NanoTech_LeatherBase">
+		<defName>Ogre_NanoTech_Leather</defName>
+		<label>nano tech reinforced leather</label>
+		<description>Nano Tech treated leather with enhanced defensive properties.</description>
+		<graphicData>
+			<color>(128,66,31)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>4.8</MarketValue>
+			<StuffPower_Armor_Sharp>2.20</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.40</StuffPower_Armor_Blunt>
+			<StuffPower_Insulation_Cold>14</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>14</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(71,52,41)</color>
+			<statFactors>
+				<MaxHitPoints>1.65</MaxHitPoints>
+				<Beauty>0</Beauty>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	
+	<!--
+	<ThingDef ParentName="Ogre_NanoTech_LeatherBase">
+		<defName>Ogre_NanoTech_Leather_ArmorHeat</defName>
+		<label>nano tech extreme heat leather</label>
+		<description>Nano Tech treated leather specifically targetting insulation from heat.</description>
+		<graphicData>
+			<color>(128,31,31)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>4.6</MarketValue>
+			<StuffPower_Armor_Sharp>0.89</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.24</StuffPower_Armor_Blunt>
+			<StuffPower_Insulation_Cold>13</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>35</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(128,31,31)</color>
+			<statFactors>
+				<MaxHitPoints>1.8</MaxHitPoints>
+				<Beauty>0</Beauty>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+	<ThingDef ParentName="Ogre_NanoTech_LeatherBase">
+		<defName>Ogre_NanoTech_Leather_ArmorCold</defName>
+		<label>nano tech extreme cold leather</label>
+		<description>Nano Tech treated leather specifically targetting insulation from cold.</description>
+		<graphicData>
+			<color>(128,31,31)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>4.6</MarketValue>
+			<StuffPower_Armor_Sharp>0.89</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.24</StuffPower_Armor_Blunt>
+			<StuffPower_Insulation_Cold>13</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>45</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(128,31,31)</color>
+			<statFactors>
+				<MaxHitPoints>1.8</MaxHitPoints>
+				<Beauty>0</Beauty>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+-->
+
+</Defs>

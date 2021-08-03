@@ -38,27 +38,45 @@ namespace Ogre.NanoRepairTech
 		{
 			--ticksTotal;
 			if (ticksTotal % 2500 == 0)
+			//if (ticksTotal % 250 == 0)
 			{
-				this.getScar().Severity -= 0.1f;
+				Hediff_Injury inj = this.getScar();
+				if (inj == null)
+				{
+					this.remove();
+				}
+				else
+				{
+					inj.Severity -= 0.041666666f;
+					if (inj.Severity <= 0)
+						this.remove();
+				}
 			}
 
 			if (ticksTotal <= 0)
 			{
-				Verse.Log.Message("Remove.");
 				this.remove();
 			}
+
+			//base.Tick();
 		}
 		
 		private void remove()
 		{
+			Verse.Log.Message("Remove.");
 			Hediff_Injury scar = this.getScar();
 			if (scar != null)
 			{
 				this.pawn.health.RemoveHediff(scar);
-				
 			}
 
-			this.pawn.health.RemoveHediff(this);
+			// this makes it crash
+			//this.pawn.health.RemoveHediff(this);
+
+			// it apparently goes away on its own
+			// if you set the severity to 0
+			this.Severity = 0;
+			
 		}
 
 		public override void ExposeData()

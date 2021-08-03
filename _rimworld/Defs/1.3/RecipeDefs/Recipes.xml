@@ -293,4 +293,72 @@
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
 	</RecipeDef>
+
+	<RecipeDef>
+		<defName>Ogre_NanoTech_MakeNanoLeather</defName>
+		<label>make reinforced leather (nano tech)</label>
+		<description>Treat most leather types with nano tech chemical base and steel reinforcements. Apparel created with it will have improved defense and hit points.</description>
+		<jobString>Making reinforced leather</jobString>
+		<workSpeedStat></workSpeedStat>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>2000</workAmount>
+		<recipeUsers>
+			<li>ElectricTailoringBench</li>
+			<li>HandTailoringBench</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Leathers</li>
+					</categories>
+					<disallowedThingDefs>
+						<li>Leather_Thrumbo</li>
+						<li>Ogre_NanoTech_Leather</li>
+					</disallowedThingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Ogre_NanoTechFuelBase</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Leathers</li>
+			</categories>
+			<disallowedThingDefs>
+				<li>Ogre_NanoTech_Leather</li>
+			</disallowedThingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>Leathers</li>
+			</categories>
+			<disallowedThingDefs>
+				<li>Leather_Thrumbo</li>
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<Ogre_NanoTech_Leather>30</Ogre_NanoTech_Leather>
+		</products>
+		<workSkill>Crafting</workSkill>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+	</RecipeDef>
 </Defs>

@@ -51,4 +51,34 @@
 			</li>
 		</comps>
 	</ThingDef>
+
+	<!--
+	<RecipeDef>
+		<defName>Ogre_NanoTech_AdministerNanoTechScarSerum</defName>
+		<label>nano tech scar serum</label>
+		<description>Administer nano tech scar serum.</description>
+		<workerClass>Recipe_AdministerUsableItem</workerClass>
+		<jobString>Administering nano tech scar serum.</jobString>
+		<targetsBodyPart>false</targetsBodyPart>
+		<anesthetize>false</anesthetize>
+		<workAmount>600</workAmount>
+		<dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+		<surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>NanoTech_ScarHealer</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>NanoTech_ScarHealer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	-->
 </Defs>

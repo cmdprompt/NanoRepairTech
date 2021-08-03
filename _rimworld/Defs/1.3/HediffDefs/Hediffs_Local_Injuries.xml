@@ -2,16 +2,16 @@
 <Defs>
 	<HediffDef>
 		<defName>Ogre_NanoTech_HeDiffHealScar</defName>
-		<label>Hediff Heal Scar</label>
+		<label>nano tech scar healer</label>
 		<labelNoun>label noun</labelNoun>
 		<hediffClass>Ogre.NanoRepairTech.Hediff_NanoTechHealScar</hediffClass>
 		<description>Nano Tech description (heal scar)</description>
 		<tendable>false</tendable>
 		<displayWound>false</displayWound>
 		<labelNounPretty>{0} in the {1}</labelNounPretty>
-		<comps>
+		<!--<comps>
 			<li Class="HediffCompProperties_DisappearsOnDeath" />
-		</comps>
+		</comps>-->
 		<injuryProps>
 			<painPerSeverity>0.0</painPerSeverity>
 			<bleedRate>0.0</bleedRate>
