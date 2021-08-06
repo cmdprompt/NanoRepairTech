@@ -52,6 +52,37 @@
 		</comps>
 	</ThingDef>
 
+	<ThingDef ParentName="NanoTech_SerumBase">
+		<defName>Ogre_NanoTech_NaturalBodyPartGrower</defName>
+		<label>Nano Tech Natural Body Part Grower</label>
+		<description>One time use natural body part regrower.</description>
+		<graphicData>
+			<texPath>Things/Item/Special/MechSerumHealer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>10</stackLimit>
+		<statBases>
+			<MarketValue>200</MarketValue>
+		</statBases>
+		<thingCategories>
+			<li>Items</li>
+		</thingCategories>
+		<tradeability>None</tradeability>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>UseItem</useJob>
+				<useLabel>Use Nano Tech serum</useLabel>
+				<useDuration>600</useDuration>
+			</li>
+			<li Class="CompProperties_UseEffect">
+				<compClass>Ogre.NanoRepairTech.CompUseEffect_NanoTechNaturalBodyPartGrower</compClass>
+			</li>
+			<li Class="CompProperties_UseEffect">
+				<compClass>CompUseEffect_DestroySelf</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+	
 	<!--
 	<RecipeDef>
 		<defName>Ogre_NanoTech_AdministerNanoTechScarSerum</defName>

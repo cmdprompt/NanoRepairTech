@@ -44,7 +44,7 @@
 			<color>(128,66,31)</color>
 		</graphicData>
 		<statBases>
-			<MarketValue>4.8</MarketValue>
+			<MarketValue>4.2</MarketValue>
 			<StuffPower_Armor_Sharp>2.20</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>0.40</StuffPower_Armor_Blunt>
 			<StuffPower_Insulation_Cold>14</StuffPower_Insulation_Cold>
@@ -58,53 +58,4 @@
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
-	
-	<!--
-	<ThingDef ParentName="Ogre_NanoTech_LeatherBase">
-		<defName>Ogre_NanoTech_Leather_ArmorHeat</defName>
-		<label>nano tech extreme heat leather</label>
-		<description>Nano Tech treated leather specifically targetting insulation from heat.</description>
-		<graphicData>
-			<color>(128,31,31)</color>
-		</graphicData>
-		<statBases>
-			<MarketValue>4.6</MarketValue>
-			<StuffPower_Armor_Sharp>0.89</StuffPower_Armor_Sharp>
-			<StuffPower_Armor_Blunt>0.24</StuffPower_Armor_Blunt>
-			<StuffPower_Insulation_Cold>13</StuffPower_Insulation_Cold>
-			<StuffPower_Insulation_Heat>35</StuffPower_Insulation_Heat>
-		</statBases>
-		<stuffProps>
-			<color>(128,31,31)</color>
-			<statFactors>
-				<MaxHitPoints>1.8</MaxHitPoints>
-				<Beauty>0</Beauty>
-			</statFactors>
-		</stuffProps>
-	</ThingDef>
-
-	<ThingDef ParentName="Ogre_NanoTech_LeatherBase">
-		<defName>Ogre_NanoTech_Leather_ArmorCold</defName>
-		<label>nano tech extreme cold leather</label>
-		<description>Nano Tech treated leather specifically targetting insulation from cold.</description>
-		<graphicData>
-			<color>(128,31,31)</color>
-		</graphicData>
-		<statBases>
-			<MarketValue>4.6</MarketValue>
-			<StuffPower_Armor_Sharp>0.89</StuffPower_Armor_Sharp>
-			<StuffPower_Armor_Blunt>0.24</StuffPower_Armor_Blunt>
-			<StuffPower_Insulation_Cold>13</StuffPower_Insulation_Cold>
-			<StuffPower_Insulation_Heat>45</StuffPower_Insulation_Heat>
-		</statBases>
-		<stuffProps>
-			<color>(128,31,31)</color>
-			<statFactors>
-				<MaxHitPoints>1.8</MaxHitPoints>
-				<Beauty>0</Beauty>
-			</statFactors>
-		</stuffProps>
-	</ThingDef>
--->
-
 </Defs>

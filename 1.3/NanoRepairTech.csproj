@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BreakdownWorker.cs" />
+    <Compile Include="Surgery\Comp_UseNaturalRegrow.cs" />
     <Compile Include="Surgery\Comp_UseScar.cs" />
     <Compile Include="Models\INano.cs" />
     <Compile Include="Models\SupportedBed.cs" />
