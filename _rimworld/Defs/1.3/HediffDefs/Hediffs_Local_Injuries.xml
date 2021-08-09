@@ -18,4 +18,34 @@
 			<canMerge>false</canMerge>
 		</injuryProps>
 	</HediffDef>
+
+	<HediffDef>
+		<defName>Ogre_NanoTech_LimbRegrow</defName>
+		<label>nano tech limb regrow</label>
+		<labelNoun>label nown</labelNoun>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>nano tech limb regrow</description>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<initialSeverity>0</initialSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>stage 10</label>
+				<capMods>
+					<li>
+						<capacity>Efficiency</capacity>
+						<postFactor>0.9</postFactor>
+					</li>
+					<li>
+						<capacity>Hunger</capacity>
+						<postFactor>1.5</postFactor>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
 </Defs>
