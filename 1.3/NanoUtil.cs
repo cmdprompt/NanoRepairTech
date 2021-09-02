@@ -18,23 +18,26 @@ namespace Ogre.NanoRepairTech
 			if (typeRimworldBed.IsAssignableFrom(bedToClone))
 				throw new Exception("Type [" + bedToClone.Name + "] is not supported.");
 
-			FieldInfo[] fields = typeof(ThingDef).GetFields(BindingFlags.Public | BindingFlags.Instance);
-			ThingDef nBed = new ThingDef();
-			foreach (FieldInfo field in fields)
-				field.SetValue(nBed, field.GetValue(bed));
+			//FieldInfo[] fieldsThingDef = typeof(ThingDef).GetFields(BindingFlags.Public | BindingFlags.Instance);
 
-			nBed.comps = new List<CompProperties>();
-			for (int i = 0; i < bed.comps.Count; i++)
-			{
-				ConstructorInfo constructor = bed.comps[i].GetType().GetConstructor(Type.EmptyTypes);
-				CompProperties comp = (CompProperties)constructor.Invoke(null);
+			//ThingDef nBed = new ThingDef();
+			//foreach (FieldInfo field in fieldsThingDef)
+			//	field.SetValue(nBed, field.GetValue(bed));
 
-				fields = comp.GetType().GetFields(BindingFlags.Public | BindingFlags.Instance);
-				foreach (FieldInfo field in fields)
-					field.SetValue(comp, field.GetValue(bed.comps[i]));
+			//nBed.comps = new List<CompProperties>();
+			//for (int i = 0; i < bed.comps.Count; i++)
+			//{
+			//	ConstructorInfo constructor = bed.comps[i].GetType().GetConstructor(Type.EmptyTypes);
+			//	CompProperties comp = (CompProperties)constructor.Invoke(null);
 
-				nBed.comps.Add(comp);
-			}
+			//	FieldInfo[] fields = comp.GetType().GetFields(BindingFlags.Public | BindingFlags.Instance);
+			//	foreach (FieldInfo field in fields)
+			//		field.SetValue(comp, field.GetValue(bed.comps[i]));
+
+			//	nBed.comps.Add(comp);
+			//}
+
+			ThingDef nBed = InitialCloneWithComps(bed);
 
 			nBed.statBases.Add(new StatModifier() { stat = StatDef.Named("Ogre_NanoApparelRate"), value = 0 });
 			nBed.statBases.Add(new StatModifier() { stat = StatDef.Named("Ogre_NanoWeaponsRate"), value = 0 });
@@ -56,7 +59,7 @@ namespace Ogre.NanoRepairTech
 			fuel.fuelFilter = new ThingFilter();
 			fuel.fuelFilter.SetAllow(ThingDef.Named("Ogre_NanoTechFuel"), true);
 			nBed.comps.Add(fuel);
-			
+
 			Dictionary<string, int> cost = new Dictionary<string, int>()
 			{
 				{ "ComponentIndustrial", 1 },
@@ -110,17 +113,139 @@ namespace Ogre.NanoRepairTech
 			nBed.techLevel = TechLevel.Industrial;
 			nBed.shortHash = 0;
 
+			nBed.statBases = new List<StatModifier>();
+			foreach (StatModifier s in bed.statBases)
+			{
+				if (s.stat == StatDefOf.WorkToBuild)
+				{
+					nBed.statBases.Add(new StatModifier()
+					{
+						stat = StatDefOf.WorkToBuild,
+						value = s.value + 2500
+					});
+				}
+				else
+				{
+					nBed.statBases.Add(s);
+				}
+			}
+
+			ModContentPack nTechModPack = DefDatabase<ThingDef>.GetNamed("Ogre_NanoTech_Bed").modContentPack; ;
+
+			nBed.modContentPack = nTechModPack;
+
 			// as of 1.3 without this, it wont
 			// show the out of fuel icon
 			nBed.drawerType = DrawerType.RealtimeOnly;
 
 			nBed.designationCategory = DefDatabase<DesignationCategoryDef>.AllDefsListForReading.Find(x => x.defName == "Ogre_NanoRepairTech_DesignationCategory");
 
-			MethodInfo newBluePrintDef = typeof(RimWorld.ThingDefGenerator_Buildings).GetMethod("NewBlueprintDef_Thing", BindingFlags.Static | BindingFlags.NonPublic);
-			nBed.blueprintDef = (ThingDef)newBluePrintDef.Invoke(null, new object[] { nBed, false, null });
+			//typeof(ShortHashGiver).GetMethod("GiveShortHash", BindingFlags.NonPublic | BindingFlags.Static).Invoke(null, new object[] { nBed, typeof(ThingDef) });
 
-			MethodInfo newFrameDef = typeof(RimWorld.ThingDefGenerator_Buildings).GetMethod("NewFrameDef_Thing", BindingFlags.Static | BindingFlags.NonPublic);
-			nBed.frameDef = (ThingDef)newFrameDef.Invoke(null, new object[] { nBed });
+			MethodInfo hashGiver = typeof(ShortHashGiver).GetMethod("GiveShortHash", BindingFlags.NonPublic | BindingFlags.Static);
+			hashGiver.Invoke(null, new object[] { nBed, typeof(ThingDef) });
+
+			// These things do not appear to work as good as
+			// they did in 1.2, comment them out and do the
+			// frame/blueprint defs by clone
+
+			//MethodInfo newBluePrintDef = typeof(RimWorld.ThingDefGenerator_Buildings).GetMethod("NewBlueprintDef_Thing", BindingFlags.Static | BindingFlags.NonPublic);
+			//nBed.blueprintDef = (ThingDef)newBluePrintDef.Invoke(null, new object[] { nBed, false, null });
+			//nBed.installBlueprintDef = (ThingDef)newBluePrintDef.Invoke(null, new object[] { nBed, true, null });
+
+			//MethodInfo newFrameDef = typeof(RimWorld.ThingDefGenerator_Buildings).GetMethod("NewFrameDef_Thing", BindingFlags.Static | BindingFlags.NonPublic);
+			//nBed.frameDef = (ThingDef)newFrameDef.Invoke(null, new object[] { nBed });
+
+			//ThingDef bluePrint = new ThingDef();
+			//foreach (FieldInfo field in fieldsThingDef)
+			//	field.SetValue(bluePrint, field.GetValue(bed.blueprintDef));
+
+			//bluePrint.comps = new List<CompProperties>();
+			//for (int i = 0; i < bed.blueprintDef.comps.Count; i++)
+			//{
+			//	ConstructorInfo constructor = bed.blueprintDef.comps[i].GetType().GetConstructor(Type.EmptyTypes);
+			//	CompProperties comp = (CompProperties)constructor.Invoke(null);
+
+			//	FieldInfo[] fields = comp.GetType().GetFields(BindingFlags.Public | BindingFlags.Instance);
+			//	foreach (FieldInfo field in fields)
+			//		field.SetValue(comp, field.GetValue(bed.blueprintDef.comps[i]));
+
+			//	bluePrint.comps.Add(comp);
+			//}
+
+			ThingDef bluePrint = InitialCloneWithComps(bed.blueprintDef);
+
+			bluePrint.modContentPack = nTechModPack;
+			bluePrint.entityDefToBuild = nBed;
+			bluePrint.defName = nBed.defName + "_BluePrint";
+
+			bluePrint.shortHash = 0;
+			hashGiver.Invoke(null, new object[] { bluePrint, typeof(ThingDef) });
+
+			nBed.blueprintDef = bluePrint;
+
+			//ThingDef installBluePrint = new ThingDef();
+			//foreach (FieldInfo field in fieldsThingDef)
+			//	field.SetValue(installBluePrint, field.GetValue(bed.installBlueprintDef));
+
+			//installBluePrint.comps = new List<CompProperties>();
+			//for (int i = 0; i < bed.installBlueprintDef.comps.Count; i++)
+			//{
+			//	ConstructorInfo constructor = bed.installBlueprintDef.comps[i].GetType().GetConstructor(Type.EmptyTypes);
+			//	CompProperties comp = (CompProperties)constructor.Invoke(null);
+
+			//	FieldInfo[] fields = comp.GetType().GetFields(BindingFlags.Public | BindingFlags.Instance);
+			//	foreach (FieldInfo field in fields)
+			//		field.SetValue(comp, field.GetValue(bed.installBlueprintDef.comps[i]));
+
+			//	installBluePrint.comps.Add(comp);
+			//}
+
+			ThingDef installBluePrint = InitialCloneWithComps(bed.installBlueprintDef);
+
+			installBluePrint.modContentPack = nTechModPack;
+			installBluePrint.entityDefToBuild = nBed;
+			installBluePrint.defName = nBed.defName + "_InstallBluePrint";
+
+			installBluePrint.shortHash = 0;
+			hashGiver.Invoke(null, new object[] { installBluePrint, typeof(ThingDef) });
+
+			nBed.installBlueprintDef = installBluePrint;
+
+			//ThingDef frameDef = new ThingDef();
+			//foreach (FieldInfo field in fieldsThingDef)
+			//	field.SetValue(frameDef, field.GetValue(bed.frameDef));
+
+			//frameDef.comps = new List<CompProperties>();
+
+			//for (int i = 0; i < bed.frameDef.comps.Count; i++)
+			//{
+			//	ConstructorInfo constructor = bed.frameDef.comps[i].GetType().GetConstructor(Type.EmptyTypes);
+			//	CompProperties comp = (CompProperties)constructor.Invoke(null);
+
+			//	FieldInfo[] fields = comp.GetType().GetFields(BindingFlags.Public | BindingFlags.Instance);
+			//	foreach (FieldInfo field in fields)
+			//		field.SetValue(comp, field.GetValue(bed.frameDef.comps[i]));
+
+			//	frameDef.comps.Add(comp);
+			//}
+
+			ThingDef frameDef = InitialCloneWithComps(bed.frameDef);
+
+			frameDef.modContentPack = nTechModPack;
+			frameDef.entityDefToBuild = nBed;
+			frameDef.defName = nBed.defName + "_Frame";
+
+			frameDef.shortHash = 0;
+			hashGiver.Invoke(null, new object[] { frameDef, typeof(ThingDef) });
+
+			nBed.frameDef = frameDef;
+
+			// Breaks on save if these defs
+			// are not loaded into the DefDatabase
+			DefDatabase<ThingDef>.Add(bluePrint);
+			DefDatabase<ThingDef>.Add(installBluePrint);
+			DefDatabase<ThingDef>.Add(frameDef);
 
 			if (bed.building.bed_humanlike)
 			{
@@ -143,9 +268,33 @@ namespace Ogre.NanoRepairTech
 			if (fnAdditionalProcessing != null)
 				fnAdditionalProcessing.Invoke(nBed);
 
-			typeof(ShortHashGiver).GetMethod("GiveShortHash", BindingFlags.NonPublic | BindingFlags.Static).Invoke(null, new object[] { nBed, typeof(ThingDef) });
+			
 
 			return nBed;
+		}
+
+		internal static ThingDef InitialCloneWithComps(ThingDef thing)
+		{
+			FieldInfo[] fieldsThingDef = typeof(ThingDef).GetFields(BindingFlags.Public | BindingFlags.Instance);
+			ThingDef rv = new ThingDef();
+
+			foreach (FieldInfo field in fieldsThingDef)
+				field.SetValue(rv, field.GetValue(thing));
+
+			rv.comps = new List<CompProperties>();
+			for (int i = 0; i < thing.comps.Count; i++)
+			{
+				ConstructorInfo constructor = thing.comps[i].GetType().GetConstructor(Type.EmptyTypes);
+				CompProperties comp = (CompProperties)constructor.Invoke(null);
+
+				FieldInfo[] fields = comp.GetType().GetFields(BindingFlags.Public | BindingFlags.Instance);
+				foreach (FieldInfo field in fields)
+					field.SetValue(comp, field.GetValue(thing.comps[i]));
+
+				rv.comps.Add(comp);
+			}
+
+			return rv;
 		}
 	}
 }
