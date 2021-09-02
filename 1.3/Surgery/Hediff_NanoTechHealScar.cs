@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RimWorld;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,7 @@ namespace Ogre.NanoRepairTech
 {
 	public class Hediff_NanoTechHealScar : HediffWithComps
 	{
-		public int ticksTotal = 0;
+		//public int ticksTotal = 0;
 		public string healingID = string.Empty;
 
 		private Hediff_Injury scar = null;
@@ -36,37 +37,77 @@ namespace Ogre.NanoRepairTech
 
 		public override void Tick()
 		{
-			--ticksTotal;
-			if (ticksTotal % 2500 == 0)
-			//if (ticksTotal % 250 == 0)
+			if (this.pawn.HashOffsetTicks() % 250 == 0)
 			{
 				Hediff_Injury inj = this.getScar();
 				if (inj == null)
 				{
 					this.remove();
+					return;
 				}
 				else
 				{
-					inj.Severity -= 0.041666666f;
+					inj.Severity -= 0.004167f;
 					if (inj.Severity <= 0)
+					{
 						this.remove();
+						return;
+					}
 				}
-			}
 
-			if (ticksTotal <= 0)
-			{
-				this.remove();
+				if (this.Severity <= 1f)
+					this.remove();
 			}
-
 			//base.Tick();
 		}
-		
+
+		//public override void Tick()
+		//{
+		//	--ticksTotal;
+		//	if (ticksTotal % 2500 == 0)
+		//	//if (ticksTotal % 250 == 0)
+		//	{
+		//		Hediff_Injury inj = this.getScar();
+		//		if (inj == null)
+		//		{
+		//			this.remove();
+		//		}
+		//		else
+		//		{
+		//			inj.Severity -= 0.041666666f;
+		//			if (inj.Severity <= 0)
+		//				this.remove();
+		//		}
+		//	}
+
+		//	if (ticksTotal <= 0)
+		//	{
+		//		this.remove();
+		//	}
+
+		//	//base.Tick();
+		//}
+
 		private void remove()
 		{
-			Verse.Log.Message("Remove.");
+			//Verse.Log.Message("Remove.");
 			Hediff_Injury scar = this.getScar();
 			if (scar != null)
 			{
+				if (scar.Part.def == BodyPartDefOf.Brain)
+				{
+					//Verse.Log.Message("Brain Scar.");
+					List<Hediff> defs = new List<Hediff>(this.pawn.health.hediffSet.hediffs);
+					for (int i = 0; i < defs.Count; i++)
+					{
+						if (string.Compare(defs[i].def.defName, "TraumaSavant", true) == 0)
+						{
+							//Verse.Log.Message("TraumaSavant detected. Assume this was the scar that caused it.");
+							this.pawn.health.RemoveHediff(defs[i]);
+							break;
+						}
+					}
+				}
 				this.pawn.health.RemoveHediff(scar);
 			}
 
@@ -81,7 +122,7 @@ namespace Ogre.NanoRepairTech
 
 		public override void ExposeData()
 		{
-			Scribe_Values.Look<int>(ref this.ticksTotal, "ticksTotal", 0, true);
+			//Scribe_Values.Look<int>(ref this.ticksTotal, "ticksTotal", 0, true);
 			Scribe_Values.Look<string>(ref this.healingID, "healingID", string.Empty, true);
 			base.ExposeData();
 		}

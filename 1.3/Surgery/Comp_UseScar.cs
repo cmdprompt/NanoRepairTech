@@ -42,19 +42,12 @@ namespace Ogre.NanoRepairTech
 				{
 					if (!existing.ContainsKey(permanent[i].GetUniqueLoadID()))
 					{
-						//Verse.Log.Message("Attaching Nano Serum: (" + permanent[i].GetUniqueLoadID() + ")");
-						HediffDef d = DefDatabase<HediffDef>.AllDefsListForReading.First<HediffDef>(x => x.defName == "Ogre_NanoTech_HeDiffHealScar");
-						Hediff_NanoTechHealScar df = (Hediff_NanoTechHealScar)HediffMaker.MakeHediff(d, usedBy, null);
-						//60,000 ticks per day
-						// 1 severity per day
-						int healAfter = (int)(permanent[i].Severity * 60000);
-						//int healAfter = (int)(permanent[i].Severity * 6000);
-						df.ticksTotal = healAfter < 2500 ? 2500 : healAfter;
+						HediffDef d = DefDatabase<HediffDef>.AllDefsListForReading.First(x => x.defName == "Ogre_NanoTech_HeDiffHealScar");
+						Hediff_NanoTechHealScar df = (Hediff_NanoTechHealScar)usedBy.health.AddHediff(d, permanent[i].Part, null, null);
+
+						df.Severity = 1 + permanent[i].Severity;
 						df.healingID = permanent[i].GetUniqueLoadID();
-						usedBy.health.AddHediff(df);
-
-						//Verse.Log.Message("ID: " + df.GetUniqueLoadID() + ", Ticks: " + healAfter.ToString());
-
+						
 						break;
 					}
 				}

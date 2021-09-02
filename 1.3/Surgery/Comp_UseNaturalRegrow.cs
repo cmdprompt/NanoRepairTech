@@ -26,7 +26,7 @@ namespace Ogre.NanoRepairTech
 				Hediff_AddedPart a = (usedBy.health.hediffSet.hediffs[i] as Hediff_AddedPart);
 				if (a != null)
 					missingOnPurpose.Add(a.Part);
-				
+
 			}
 
 			if (parts.Count == 0)
@@ -92,11 +92,33 @@ namespace Ogre.NanoRepairTech
 						}
 					}
 
+					HediffDef def = DefDatabase<HediffDef>.AllDefsListForReading.First(x => x.defName == "Ogre_NanoTech_LimbRegrow");
+
+					//Hediff hediff = HediffMaker.MakeHediff(def, usedBy, record);
+					//HediffComp_SeverityPerDay severity = hediff.TryGetComp<HediffComp_SeverityPerDay>();
+					//((HediffCompProperties_SeverityPerDay)severity.props).severityPerDay = 1f / (totalHitpoints / 10.0f);
+
+					// Initial Severity Method
+					HediffWithComps hediff = (HediffWithComps)usedBy.health.AddHediff(def, record, null, null);
+					float startSeverity = (totalHitpoints / 4f);
+					if (startSeverity < 1.0f)
+						startSeverity = 1.0f;
+					else if (startSeverity > 60.0f)
+						startSeverity = 60.0f;
+
+					hediff.Severity = startSeverity;
+					((Hediff_StagesByPercent)hediff).startingSeverity = hediff.Severity;
+
+					// Severity Per Day
+					//HediffComp_SeverityPerDay severity = hediff.TryGetComp<HediffComp_SeverityPerDay>();
+					//((HediffCompProperties_SeverityPerDay)severity.props).severityPerDay = -1f * (1f / (totalHitpoints / 10.0f));
+
 					Verse.Log.Message(" TotalHP: " + totalHitpoints);
+					//Verse.Log.Message(" Severity Per Day: " + ((HediffCompProperties_SeverityPerDay)severity.props).severityPerDay);
 				}
 			}
-			
-			
+
+
 			base.DoEffect(usedBy);
 		}
 	}
