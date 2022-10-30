@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- These are not used in the calculations
+		     in any way in the game, they are just
+				 used to display mend rate in the
+				 info section
+		-->
+
+	<!-- Apparel -->
+	<StatDef>
+		<defName>Ogre_NanoApparelRate</defName>
+		<label>Nano Tech Apparel Repair</label>
+		<description>Speed at which the Nano Tech unit repairs apparel.</description>
+		<category>Building</category>
+		<defaultBaseValue>0</defaultBaseValue>
+		<formatString>{0}%</formatString>
+		<hideAtValue>0</hideAtValue>
+		<parts>
+			<li Class="StatPart_Quality">
+				<factorLegendary>1.5</factorLegendary>
+				<factorMasterwork>1.1</factorMasterwork>
+				<factorExcellent>1.0</factorExcellent>
+				<factorGood>0.98</factorGood>
+				<factorNormal>0.97</factorNormal>
+				<factorPoor>0.85</factorPoor>
+				<factorAwful>0.8</factorAwful>
+			</li>
+		</parts>
+	</StatDef>
+
+	<!-- Weapons -->
+	<StatDef>
+		<defName>Ogre_NanoWeaponsRate</defName>
+		<label>Nano Tech Weapons Repair</label>
+		<description>Speed at which the Nano Tech unit repairs weapons.</description>
+		<category>Building</category>
+		<defaultBaseValue>-1</defaultBaseValue>
+		<formatString>{0}%</formatString>
+		<hideAtValue>-1</hideAtValue>
+		<parts>
+			<li Class="StatPart_Quality">
+				<factorLegendary>1.5</factorLegendary>
+				<factorMasterwork>1.1</factorMasterwork>
+				<factorExcellent>1.0</factorExcellent>
+				<factorGood>0.98</factorGood>
+				<factorNormal>0.97</factorNormal>
+				<factorPoor>0.85</factorPoor>
+				<factorAwful>0.8</factorAwful>
+			</li>
+		</parts>
+	</StatDef>
+</Defs>
