@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+	<ThingDef Name="NanoShelfBase" ParentName="ShelfBase" Abstract="true">
+		<building>
+			<fixedStorageSettings Inherit="false">
+				<filter>
+					<disallowNotEverStorable>true</disallowNotEverStorable>
+					<categories>
+						<li>Weapons</li>
+						<li>Apparel</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="false">
+				<priority>Preferred</priority>
+				<filter>
+					<categories>
+						<li>Weapons</li>
+						<li>Apparel</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
 	<!-- Beds -->
 	<ThingDef ParentName="BasicBedBase">
 		<thingClass>Ogre.NanoRepairTech.NanoBed</thingClass>
@@ -297,7 +318,7 @@
 	</ThingDef>
 
 	<!-- Shelves -->
-	<ThingDef ParentName="ShelfBase">
+	<ThingDef ParentName="NanoShelfBase">
 		<thingClass>Ogre.NanoRepairTech.NanoShelf</thingClass>
 		<defName>Ogre_NanoTech_2x1_Shelf</defName>
 		<label>nano tech shelf (2x1)</label>
@@ -348,15 +369,6 @@
 		<building>
 			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
 			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
-			<defaultStorageSettings>
-				<priority>Preferred</priority>
-				<filter>
-					<categories>
-						<li>Weapons</li>
-						<li>Apparel</li>
-					</categories>
-				</filter>
-			</defaultStorageSettings>
 			<paintable>true</paintable>
 		</building>
 		<researchPrerequisites>
@@ -370,7 +382,7 @@
 		<techLevel>Industrial</techLevel>
 	</ThingDef>
 
-	<ThingDef ParentName="ShelfBase">
+	<ThingDef ParentName="NanoShelfBase">
 		<thingClass>Ogre.NanoRepairTech.NanoShelf</thingClass>
 		<defName>Ogre_NanoTech_1x1_Shelf</defName>
 		<label>nano tech shelf (1x1)</label>
@@ -422,15 +434,6 @@
 		<building>
 			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
 			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
-			<defaultStorageSettings>
-				<priority>Preferred</priority>
-				<filter>
-					<categories>
-						<li>Weapons</li>
-						<li>Apparel</li>
-					</categories>
-				</filter>
-			</defaultStorageSettings>
 		</building>
 		<inspectorTabs>
 			<li>ITab_Storage</li>

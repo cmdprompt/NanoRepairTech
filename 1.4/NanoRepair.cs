@@ -56,7 +56,7 @@ namespace Ogre.NanoRepairTech
 
 		//===============================================================================\\
 
-		public void ProcessTick(List<Apparel> apparel, List<Thing> weapons, INano nanoObject)
+		public void ProcessTick(List<Thing> apparel, List<Thing> weapons, INano nanoObject)
 		{
 			// Stat Defs for UI
 			bool isAdvancedComplete = IsAdvancedResearchComplete();

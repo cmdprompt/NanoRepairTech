@@ -33,28 +33,47 @@ namespace Ogre.NanoRepairTech
 		{
 			base.TickRare();
 
-			List<Apparel> apparel = new List<Apparel>();
+			List<Thing> apparel = new List<Thing>();
 			List<Thing> weapons = new List<Thing>();
+			bool isWeaponsResearchComplete = NanoRepair.IsWeaponResearchComplete();
 
 			if (_nano.CmpPowerTrader.PowerOn && _nano.CmpRefuelable.HasFuel)
 			{
 				foreach (Pawn occupant in new List<Pawn>(this.CurOccupants).Where(x => x != null))
 				{
-					if (occupant.apparel != null && occupant.apparel.WornApparel != null)
-						apparel.AddRange(new List<Apparel>(occupant.apparel.WornApparel).Where(x => x != null && x.def != null));
-
-					if (NanoRepair.IsWeaponResearchComplete())
+					List<Thing> things = new List<Thing>(occupant.EquippedWornOrInventoryThings);
+					if (things != null)
 					{
-						if (occupant.equipment != null && occupant.equipment.GetDirectlyHeldThings() != null)
+						foreach (Thing thing in things)
 						{
-							weapons.AddRange(new List<Thing>(occupant.equipment.GetDirectlyHeldThings()).Where(x =>
+							if (thing != null && thing.def != null)
 							{
-								return (x != null)
-									&& (x.def != null)
-									&& (x.def.IsRangedWeapon || x.def.IsMeleeWeapon);
-							}));
+								if (thing.def.IsApparel)
+								{
+									apparel.Add(thing);
+								}
+								else if (isWeaponsResearchComplete && (thing.def.IsRangedWeapon || thing.def.IsMeleeWeapon))
+								{
+									weapons.Add(thing);
+								}
+							}
 						}
 					}
+					//if (occupant.apparel != null && occupant.apparel.WornApparel != null)
+					//	apparel.AddRange(new List<Apparel>(occupant.apparel.WornApparel).Where(x => x != null && x.def != null));
+
+					//if (NanoRepair.IsWeaponResearchComplete())
+					//{
+					//	if (occupant.equipment != null && occupant.equipment.GetDirectlyHeldThings() != null)
+					//	{
+					//		weapons.AddRange(new List<Thing>(occupant.equipment.GetDirectlyHeldThings()).Where(x =>
+					//		{
+					//			return (x != null)
+					//				&& (x.def != null)
+					//				&& (x.def.IsRangedWeapon || x.def.IsMeleeWeapon);
+					//		}));
+					//	}
+					//}
 				}
 			}
 

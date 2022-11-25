@@ -27,7 +27,7 @@ namespace Ogre.NanoRepairTech
 		{
 			base.TickRare();
 
-			List<Apparel> apparel = new List<Apparel>();
+			List<Thing> apparel = new List<Thing>();
 			List<Thing> weapons = new List<Thing>();
 
 			if (_nano.CmpPowerTrader.PowerOn && _nano.CmpRefuelable.HasFuel)
@@ -42,7 +42,7 @@ namespace Ogre.NanoRepairTech
 						{
 							if (thing.def.IsApparel)
 							{
-								apparel.Add((Apparel)thing);
+								apparel.Add(thing);
 							}
 							else if (weaponsComplete && (thing.def.IsMeleeWeapon || thing.def.IsRangedWeapon))
 							{
